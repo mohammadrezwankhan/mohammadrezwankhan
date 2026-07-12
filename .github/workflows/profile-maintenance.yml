@@ -20,7 +20,14 @@ jobs:
       - name: Check README links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --verbose --no-progress README.md
+          args: >-
+            --verbose
+            --no-progress
+            --exclude '^https://github-readme-stats\.vercel\.app/.*'
+            --exclude '^https://streak-stats\.demolab\.com/.*'
+            --exclude '^https://github-readme-activity-graph\.vercel\.app/.*'
+            --exclude '^https://fr\.linkedin\.com/.*'
+            README.md
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
