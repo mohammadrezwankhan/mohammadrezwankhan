@@ -80,10 +80,10 @@ I work across battery systems, grid reliability, hybrid powertrain R&D, and exec
 |---:|---|---|---|
 | 1 | [mohammadrezwankhan](https://github.com/mohammadrezwankhan/mohammadrezwankhan) | Live | Profile README and technical identity hub. |
 | 2 | [github-achievement-sandbox](https://github.com/mohammadrezwankhan/github-achievement-sandbox) | Live | Transparent workflow practice and GitHub contribution hygiene. |
-| 3 | [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Scaffolded | Templates for FAT/SAT, inspection evidence, supplier review, and commissioning readiness. |
-| 4 | [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Scaffolded | Research-backed notes on BTMS, thermal behavior, modeling assumptions, and validation. |
-| 5 | [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Scaffolded | Clear explanations of grid-forming BESS, dispatch logic, and storage reliability. |
-| 6 | [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Scaffolded | Reproducible MATLAB/Simulink examples for batteries, converters, and energy systems. |
+| 3 | [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Active starter | Templates for FAT/SAT, inspection evidence, supplier review, and commissioning readiness. |
+| 4 | [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Active starter | Research-backed notes on BTMS, thermal behavior, modeling assumptions, and validation. |
+| 5 | [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Active starter | Clear explanations of grid-forming BESS, dispatch logic, and storage reliability. |
+| 6 | [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Active starter | Reproducible MATLAB/Simulink examples for batteries, converters, and energy systems. |
 
 ---
 
