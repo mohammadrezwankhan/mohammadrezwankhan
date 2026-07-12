@@ -2,110 +2,110 @@
 
 # Mohammad Rezwan Khan
 
-### Electrical R&D Engineer @ Akkodis
+### Electrical R&D Engineer | BESS QA/QC | Battery R&D | Smart Grid Reliability
 
-**Driving quality and reliability from battery R&D to utility-scale EPC execution.**
+**I turn battery, grid, and powertrain complexity into traceable engineering evidence for reliable clean-energy delivery.**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-live_personal_brand-8bd9ca?style=for-the-badge)](https://mohammadrezwankhan.github.io/personal-brand-site/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-9bbce2?style=for-the-badge)](https://fr.linkedin.com/in/mohammadrezwankhan/fr)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--1532--0598-b9d8a8?style=for-the-badge)](https://orcid.org/0000-0002-1532-0598)
+[![GitHub Pro](https://img.shields.io/badge/GitHub-Pro-24292f?style=for-the-badge&logo=github)](https://github.com/mohammadrezwankhan)
 
 </div>
 
 ---
 
-## Professional Signal
+<table>
+  <tr>
+    <td width="58%" valign="top">
 
-I work at the intersection of battery systems, grid reliability, powertrain R&D, and execution-grade QA/QC. My GitHub profile is built as a technical identity layer: clear evidence, searchable expertise, and professional links for recruiters, collaborators, engineering managers, and research partners.
+## Engineering Signal
 
-> **I translate battery and grid complexity into utility-scale reliability.**
+I work across battery systems, grid reliability, hybrid powertrain R&D, and execution-grade QA/QC. My strongest value is translating technical complexity into evidence that teams can inspect, validate, and trust before scale.
+
+> Reliability is not a claim. It is a chain of evidence.
+
+    </td>
+    <td width="42%" valign="top">
+
+## Recruiter Snapshot
 
 | Signal | Evidence |
 |---|---|
 | Research traction | 20,715+ reads, 570 citations, 17 publications |
-| Engineering focus | BESS QA/QC, battery R&D, smart grid, renewable energy systems |
-| Delivery context | Utility-scale EPC, FAT/SAT, commissioning readiness, supplier evidence |
-| Technical stack | MATLAB/Simulink, model-based design, power electronics, AI for energy systems |
-| Brand home | [mohammadrezwankhan.github.io/personal-brand-site](https://mohammadrezwankhan.github.io/personal-brand-site/) |
+| Core domains | BESS, battery R&D, smart grid, renewable energy |
+| Delivery context | EPC, FAT/SAT, commissioning, supplier evidence |
+| Technical tools | MATLAB, Simulink, model-based design, power electronics |
+
+    </td>
+  </tr>
+</table>
+
+---
+
+## GitHub Analytics
+
+<div align="center">
+
+<img height="175" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=mohammadrezwankhan&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github" />
+<img height="175" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammadrezwankhan&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+
+<br />
+
+<img alt="GitHub streak" src="https://streak-stats.demolab.com?user=mohammadrezwankhan&theme=tokyonight&hide_border=true" />
+
+<br />
+
+<img alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=mohammadrezwankhan&theme=tokyo-night&hide_border=true&area=true" />
+
+</div>
 
 ---
 
 ## What I Engineer
 
-- Battery energy storage systems with traceable QA/QC, inspection logic, FAT/SAT readiness, and handover evidence.
-- Hybrid electric powertrain R&D using model-based design, RCP, SIL/PIL/HIL thinking, and system-level validation.
-- Smart-grid and grid-forming storage strategies for resilient clean-energy infrastructure.
-- Utility-scale EPC support across technical specifications, supplier interfaces, delivery risk, and commissioning gates.
-- Battery thermal management, BMS/BTMS, power electronics, fault detection, and AI-assisted energy analytics.
-
----
-
-## Core Capability Stack
-
-| Domain | Value Proposition |
+| Domain | Impact |
 |---|---|
-| Hybrid electric powertrain | Optimize subsystem architecture and energy flow for next-generation electric mobility. |
-| Smart grid and BESS | Deploy intelligent control and resilient storage strategies for grid-forming energy storage. |
-| Renewable energy systems | Maximize PV-battery integration and storage flexibility for utility-scale delivery. |
-| Power electronics | Engineer robust converters and fault-detection systems for uncompromised power quality. |
-| AI for energy systems | Apply digital twins and predictive modeling to battery thermal behavior and grid response. |
+| BESS QA/QC | Build inspection logic, FAT/SAT readiness, handover evidence, and reliability gates for storage projects. |
+| Battery R&D | Connect thermal behavior, BMS/BTMS thinking, cell-pack behavior, and validation planning. |
+| Smart grid | Translate storage and control strategy into resilient grid-forming and grid-supporting outcomes. |
+| Hybrid powertrain | Use model-based design and validation logic to reduce late-stage engineering risk. |
+| Technical documentation | Turn engineering work into searchable, reviewable, recruiter-readable proof. |
 
 ---
 
-## GitHub Operating Principles
+## Repositories To Pin
 
-```text
-Evidence before execution.
-Quality before scale.
-Traceability before handover.
-Reliability before claims.
-```
-
-I use GitHub as more than a code shelf. For my public work and personal technical brand, it is a documentation, validation, and publishing layer:
-
-- Documentation-first repositories with clear context, outcomes, and links.
-- Static, low-attack-surface publishing with GitHub Pages.
-- Search-ready technical metadata for humans, recruiters, and AI discovery systems.
-- Versioned improvement loops so visible work keeps getting sharper over time.
+| Rank | Repository | Status | Why it belongs on the front page |
+|---:|---|---|---|
+| 1 | [mohammadrezwankhan](https://github.com/mohammadrezwankhan/mohammadrezwankhan) | Live | Profile README and technical identity hub. |
+| 2 | [github-achievement-sandbox](https://github.com/mohammadrezwankhan/github-achievement-sandbox) | Live | Transparent workflow practice and GitHub contribution hygiene. |
+| 3 | `bess-qaqc-toolkit` | Build next | Templates for FAT/SAT, inspection evidence, supplier review, and commissioning readiness. |
+| 4 | `battery-thermal-modeling-notes` | Build next | Research-backed notes on BTMS, thermal behavior, modeling assumptions, and validation. |
+| 5 | `smart-grid-storage-playbook` | Build next | Clear explanations of grid-forming BESS, dispatch logic, and storage reliability. |
+| 6 | `matlab-simulink-energy-lab` | Build next | Reproducible MATLAB/Simulink examples for batteries, converters, and energy systems. |
 
 ---
 
-## Current Work Direction
+## Current Focus
 
-| Track | Questions I Like Working On |
-|---|---|
-| BESS assurance | How do we make inspection, commissioning, and evidence trails easier to trust? |
-| Powertrain R&D | How do we validate energy-flow decisions before expensive field iteration? |
-| Smart grid | How do storage systems support resilience, flexibility, and grid-forming behavior? |
-| Technical branding | How do engineers present proof of competence without sounding generic? |
-| Engineering education | How can complex energy topics become clearer for students and industry teams? |
-
----
-
-## Selected Research Themes
-
-- Thermal management of battery systems for electric vehicle and smart-grid applications.
-- Unified control frameworks for grid-tied and grid-forming battery energy storage systems.
-- Battery state-of-charge estimation using system identification and nonlinear optimization.
-- Quality, safety, and design pathways for high-performing battery thermal management systems.
-
-Research and professional identity:
-
-- [Personal brand website](https://mohammadrezwankhan.github.io/personal-brand-site/)
-- [ORCID research identity](https://orcid.org/0000-0002-1532-0598)
-- [LinkedIn profile](https://fr.linkedin.com/in/mohammadrezwankhan/fr)
+- BESS project assurance with traceable QA/QC evidence.
+- Battery thermal management, BMS/BTMS, and validation workflows.
+- Grid-forming storage, smart-grid resilience, and renewable integration.
+- MATLAB/Simulink models for energy systems and power electronics.
+- Research-backed technical branding for engineers working in clean-energy systems.
 
 ---
 
 ## Collaboration Fit
 
-The best conversations usually involve clean-energy systems that need defensible evidence before scale:
+I am most useful where engineering decisions need proof before scale:
 
-- BESS QA/QC frameworks and project assurance.
-- Hybrid powertrain R&D and model-based validation.
-- Utility-scale storage execution and commissioning readiness.
-- Smart-grid resilience and grid-forming storage strategy.
-- Research-backed technical positioning, documentation, and education.
+- Utility-scale storage QA/QC and commissioning readiness.
+- Hybrid powertrain and battery R&D documentation.
+- Smart-grid and renewable integration analysis.
+- Technical writing that makes engineering work searchable and defensible.
+- Open-source educational resources for energy systems.
 
 ---
 
