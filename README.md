@@ -109,6 +109,21 @@ I am most useful where engineering decisions need proof before scale:
 
 ---
 
+## Open Collaboration
+
+The [MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) is open to engineers, researchers, and students who want to improve inspectable battery and power-electronics reference models.
+
+The current contributor task is [a reusable controller-comparison metrics table](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/issues/90). Useful contributions include:
+
+- Defining a metric schema with units and validation rules.
+- Implementing reusable MATLAB table-generation logic.
+- Adding tests for missing, invalid, and non-finite simulation data.
+- Reviewing the engineering assumptions and improving the documentation.
+
+See the project's [contribution guide](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md) before starting. Authorship and co-authorship are credited only when they reflect real, agreed contributions to the merged work.
+
+---
+
 <div align="center">
 
 **Bring me the energy challenge that needs proof before scale.**
