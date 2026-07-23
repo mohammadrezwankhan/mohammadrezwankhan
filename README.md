@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD001 MD013 MD033 MD041 MD060 -->
+
 <div align="center">
 
 # Mohammad Rezwan Khan
@@ -27,17 +29,18 @@ reference models. Every model states its assumptions and connects simulation
 outputs to an engineering question.
 
 - Lithium-ion battery equivalent-circuit models, including 1RC and 2RC dynamics.
-- Cell and six-cell module thermal models covering heat generation, cooling
-  sensitivity, serial liquid-coolant warming, and temperature nonuniformity.
+- Lumped electro-thermal, six-cell liquid-cooling, and pouch-cell
+  through-thickness finite-volume models covering heat generation, cooling
+  sensitivity, coolant warming, and spatial temperature nonuniformity.
 - A real-time state-of-charge estimator using a two-state extended Kalman filter.
 - Average-value power-converter models with deterministic validation tests.
-- Ten base-MATLAB checks and four native Simulink checks verified on MATLAB
+- Eleven base-MATLAB checks and four native Simulink checks verified on MATLAB
   R2026a.
 
-[![Six-cell battery module liquid-cooling response showing cell temperatures, coolant warming, and module temperature spread](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/main/assets/battery-module-cooling-network-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
+[![Pouch-cell thermal-gradient response showing heat input, surface and center temperatures, resolved through-thickness profiles, and boundary heat removal](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/v0.6.0/assets/pouch-cell-thermal-gradient-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.6.0)
 
 [Explore the models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
-[Read the latest release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest) |
+[Read the v0.6.0 release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.6.0) |
 [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mohammadrezwankhan/matlab-simulink-energy-lab) |
 [Contribute](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)
 
@@ -55,7 +58,7 @@ outputs to an engineering question.
 
 | Repository | Engineering purpose |
 |---|---|
-| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Validated MATLAB/Simulink models for battery RC dynamics, thermal response, SOC estimation, and power converters. |
+| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Validated MATLAB/Simulink models for battery RC dynamics, SOC estimation, liquid cooling, pouch-cell spatial thermal gradients, and power converters. |
 | [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Research-backed notes on BTMS assumptions, heat generation, temperature behavior, and validation. |
 | [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Inspection logic and evidence templates for utility-scale battery energy storage projects. |
 | [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Practical engineering guidance for grid-forming storage, dispatch, and renewable-energy integration. |
