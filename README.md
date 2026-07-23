@@ -27,14 +27,17 @@ reference models. Every model states its assumptions and connects simulation
 outputs to an engineering question.
 
 - Lithium-ion battery equivalent-circuit models, including 1RC and 2RC dynamics.
-- Battery thermal models and battery thermal management system (BTMS) studies.
+- Cell and six-cell module thermal models covering heat generation, cooling
+  sensitivity, serial liquid-coolant warming, and temperature nonuniformity.
 - A real-time state-of-charge estimator using a two-state extended Kalman filter.
 - Average-value power-converter models with deterministic validation tests.
+- Ten base-MATLAB checks and four native Simulink checks verified on MATLAB
+  R2026a.
 
-[![Extended Kalman filter benchmark showing reference and estimated battery state of charge](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/main/assets/battery-soc-ekf-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.4.0)
+[![Six-cell battery module liquid-cooling response showing cell temperatures, coolant warming, and module temperature spread](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/main/assets/battery-module-cooling-network-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
 
 [Explore the models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
-[Read the v0.4.0 release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.4.0) |
+[Read the latest release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest) |
 [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mohammadrezwankhan/matlab-simulink-energy-lab) |
 [Contribute](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)
 
