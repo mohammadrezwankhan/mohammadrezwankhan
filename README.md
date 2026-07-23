@@ -29,18 +29,20 @@ reference models. Every model states its assumptions and connects simulation
 outputs to an engineering question.
 
 - Lithium-ion battery equivalent-circuit models, including 1RC and 2RC dynamics.
+- Toolbox-free two-RC parameter identification with positive physical
+  parameters and an independent held-out pulse-profile benchmark.
 - Lumped electro-thermal, six-cell liquid-cooling, and pouch-cell
   through-thickness finite-volume models covering heat generation, cooling
   sensitivity, coolant warming, and spatial temperature nonuniformity.
 - A real-time state-of-charge estimator using a two-state extended Kalman filter.
 - Average-value power-converter models with deterministic validation tests.
-- Eleven base-MATLAB checks and four native Simulink checks verified on MATLAB
+- Twelve base-MATLAB checks and four native Simulink checks verified on MATLAB
   R2026a.
 
-[![Pouch-cell thermal-gradient response showing heat input, surface and center temperatures, resolved through-thickness profiles, and boundary heat removal](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/v0.6.0/assets/pouch-cell-thermal-gradient-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.6.0)
+[![Two-RC battery parameter-identification benchmark comparing fitted and synthetic voltage records on calibration and held-out pulse profiles with millivolt residuals](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/v0.7.0/assets/battery-2rc-identification-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.7.0)
 
 [Explore the models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
-[Read the v0.6.0 release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.6.0) |
+[Read the v0.7.0 release](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.7.0) |
 [Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mohammadrezwankhan/matlab-simulink-energy-lab) |
 [Contribute](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)
 
@@ -58,7 +60,7 @@ outputs to an engineering question.
 
 | Repository | Engineering purpose |
 |---|---|
-| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Validated MATLAB/Simulink models for battery RC dynamics, SOC estimation, liquid cooling, pouch-cell spatial thermal gradients, and power converters. |
+| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Validated MATLAB/Simulink models for battery RC dynamics and parameter identification, SOC estimation, liquid cooling, pouch-cell spatial thermal gradients, and power converters. |
 | [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Research-backed notes on BTMS assumptions, heat generation, temperature behavior, and validation. |
 | [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Inspection logic and evidence templates for utility-scale battery energy storage projects. |
 | [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Practical engineering guidance for grid-forming storage, dispatch, and renewable-energy integration. |
@@ -77,9 +79,11 @@ Research identity: [ORCID 0000-0002-1532-0598](https://orcid.org/0000-0002-1532-
 ## Open Collaboration
 
 Engineers, researchers, and students are welcome to contribute substantive
-models, tests, validation data, and documentation to the energy lab. The current
-collaboration task is a
-[reusable controller-comparison metrics table](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/issues/90).
+models, tests, validation data, and documentation to the energy lab. Choose a
+scoped item from the
+[project roadmap](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab#what-should-come-next)
+or browse the
+[open issues](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/issues).
 Please read the
 [contribution guide](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)
 before starting.
