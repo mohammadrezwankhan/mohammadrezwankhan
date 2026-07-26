@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Mohammad Rezwan Khan</title>
+  <desc id="desc">Battery energy storage researcher connecting cell physics to grid impact</desc>
+  <rect width="1200" height="420" rx="18" fill="#0d1117"/>
+  <path d="M0 338H1200V420H0Z" fill="#161b22"/>
+  <path d="M0 338H1200" stroke="#30363d" stroke-width="2"/>
+  <path d="M42 52H174" stroke="#2ea043" stroke-width="6"/>
+  <text x="42" y="118" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="700">Mohammad Rezwan Khan</text>
+  <text x="42" y="165" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="24">Battery energy storage researcher and engineering leader</text>
+  <text x="42" y="224" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">CELL PHYSICS</text>
+  <path d="M196 216H245" stroke="#58a6ff" stroke-width="3"/>
+  <path d="M237 208L249 216L237 224" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <text x="267" y="224" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">THERMAL SAFETY</text>
+  <path d="M468 216H517" stroke="#f2a900" stroke-width="3"/>
+  <path d="M509 208L521 216L509 224" fill="none" stroke="#f2a900" stroke-width="3"/>
+  <text x="539" y="224" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">BESS ASSURANCE</text>
+  <text x="42" y="288" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="19">MATLAB / SIMULINK</text>
+  <circle cx="235" cy="281" r="4" fill="#8b949e"/>
+  <text x="253" y="288" fill="#79c0ff" font-family="Segoe UI, Arial, sans-serif" font-size="19">VALIDATION</text>
+  <circle cx="382" cy="281" r="4" fill="#8b949e"/>
+  <text x="400" y="288" fill="#ffa657" font-family="Segoe UI, Arial, sans-serif" font-size="19">SMART GRIDS</text>
+
+  <g transform="translate(790 49)">
+    <rect x="0" y="54" width="202" height="174" rx="16" fill="#161b22" stroke="#58a6ff" stroke-width="4"/>
+    <rect x="70" y="31" width="62" height="24" rx="6" fill="#58a6ff"/>
+    <rect x="20" y="75" width="162" height="132" rx="9" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+    <rect x="35" y="93" width="28" height="96" rx="5" fill="#2ea043"/>
+    <rect x="70" y="93" width="28" height="96" rx="5" fill="#2ea043"/>
+    <rect x="105" y="93" width="28" height="96" rx="5" fill="#f2a900"/>
+    <rect x="140" y="93" width="28" height="96" rx="5" fill="#e16737"/>
+    <path d="M101 108L83 146H104L91 177L128 133H106L122 108Z" fill="#f0f6fc"/>
+    <path d="M208 141H267" stroke="#8b949e" stroke-width="4"/>
+    <path d="M258 131L274 141L258 151" fill="none" stroke="#8b949e" stroke-width="4"/>
+    <circle cx="302" cy="141" r="26" fill="#161b22" stroke="#f2a900" stroke-width="4"/>
+    <path d="M302 115V167M276 141H328" stroke="#f2a900" stroke-width="3"/>
+    <path d="M302 168V208M264 208H340M279 208L302 174L325 208" fill="none" stroke="#f0f6fc" stroke-width="4"/>
+  </g>
+
+  <text x="42" y="386" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="18">RESEARCH</text>
+  <text x="170" y="386" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18">+</text>
+  <text x="206" y="386" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="18">MODELS</text>
+  <text x="322" y="386" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18">+</text>
+  <text x="358" y="386" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="18">EVIDENCE</text>
+  <text x="502" y="386" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="18">=</text>
+  <text x="540" y="386" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">BETTER ENERGY DECISIONS</text>
+</svg>
