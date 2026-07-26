@@ -64,14 +64,14 @@ connects simulation output to an engineering question.
 | Thermal management | Lumped electro-thermal, six-cell liquid-cooling, and pouch-cell finite-volume models for heat generation, cooling sensitivity, and spatial nonuniformity. |
 | State estimation | A two-state extended Kalman filter for real-time state-of-charge estimation. |
 | Power conversion | Average-value converter references with deterministic validation tests. |
-| Verification | Twelve base-MATLAB checks and four native Simulink checks verified on MATLAB R2026a. |
+| Verification | Thirteen base-MATLAB checks and four native Simulink checks verified on MATLAB R2026a. |
 
 <div align="center">
 
 [![Two-RC battery parameter-identification benchmark comparing fitted and synthetic voltage records on calibration and held-out pulse profiles](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/v0.7.0/assets/battery-2rc-identification-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.7.0)
 
 **[Explore models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** |
-**[Read release notes](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.7.0)** |
+**[Read v0.8.0 release notes](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.8.0)** |
 **[Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mohammadrezwankhan/matlab-simulink-energy-lab)** |
 **[Contribute](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)**
 
@@ -132,14 +132,17 @@ connects simulation output to an engineering question.
 
 </div>
 
-## GitHub Snapshot
+## Live Engineering Signals
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mohammadrezwankhan&theme=github_dark" alt="Mohammad Rezwan Khan GitHub contribution summary" width="98%">
+[![Followers](https://img.shields.io/github/followers/mohammadrezwankhan?style=for-the-badge&logo=github&label=Followers&color=24292F)](https://github.com/mohammadrezwankhan?tab=followers)
+[![Energy Lab stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Energy%20Lab%20Stars&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/stargazers)
+[![Energy Lab forks](https://img.shields.io/github/forks/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Forks&color=0A66C2)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/forks)
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mohammadrezwankhan&theme=github_dark" alt="Repositories by programming language" width="49%">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mohammadrezwankhan&theme=github_dark&utcOffset=2" alt="GitHub productive time" width="49%">
+[![Latest release](https://img.shields.io/github/v/release/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Latest%20Release&color=0B6E4F)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
+[![Validation](https://img.shields.io/badge/Automated_Checks-17-8957E5?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml)
+[![MATLAB](https://img.shields.io/badge/Verified-MATLAB_R2026a-E16737?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab#run-every-check)
 
 </div>
 
