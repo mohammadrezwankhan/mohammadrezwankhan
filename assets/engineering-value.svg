@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering value chain</title>
+  <desc id="desc">A five-stage engineering process connecting research questions to field impact</desc>
+  <rect width="1200" height="420" rx="16" fill="#0d1117"/>
+  <text x="48" y="54" fill="#f0f6fc" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">ENGINEERING VALUE CHAIN</text>
+  <text x="48" y="83" fill="#8b949e" font-family="Segoe UI, Arial, sans-serif" font-size="16">The deliverable is not a model. It is a decision someone can defend.</text>
+
+  <path d="M138 176H264M365 176H491M592 176H718M819 176H945" stroke="#30363d" stroke-width="12" stroke-linecap="round"/>
+  <path d="M251 162L272 176L251 190M478 162L499 176L478 190M705 162L726 176L705 190M932 162L953 176L932 190" fill="none" stroke="#8b949e" stroke-width="4"/>
+
+  <g transform="translate(48 116)">
+    <circle cx="70" cy="60" r="60" fill="#161b22" stroke="#58a6ff" stroke-width="4"/>
+    <circle cx="70" cy="60" r="23" fill="none" stroke="#58a6ff" stroke-width="5"/>
+    <path d="M88 78L108 98" stroke="#58a6ff" stroke-width="7" stroke-linecap="round"/>
+    <text x="70" y="160" fill="#79c0ff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">01 QUESTION</text>
+    <text x="70" y="185" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Define physics</text>
+    <text x="70" y="203" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">and constraints</text>
+  </g>
+
+  <g transform="translate(275 116)">
+    <circle cx="70" cy="60" r="60" fill="#161b22" stroke="#7ee787" stroke-width="4"/>
+    <path d="M32 80C48 47 61 89 74 51C87 13 97 72 108 39" fill="none" stroke="#7ee787" stroke-width="6" stroke-linecap="round"/>
+    <path d="M32 94H108" stroke="#7ee787" stroke-width="3"/>
+    <text x="70" y="160" fill="#7ee787" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">02 MODEL</text>
+    <text x="70" y="185" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Make assumptions</text>
+    <text x="70" y="203" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">inspectable</text>
+  </g>
+
+  <g transform="translate(502 116)">
+    <circle cx="70" cy="60" r="60" fill="#161b22" stroke="#f2a900" stroke-width="4"/>
+    <path d="M35 60L57 82L103 35" fill="none" stroke="#f2a900" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="160" fill="#f2a900" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">03 EVIDENCE</text>
+    <text x="70" y="185" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Test behavior</text>
+    <text x="70" y="203" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">and boundaries</text>
+  </g>
+
+  <g transform="translate(729 116)">
+    <circle cx="70" cy="60" r="60" fill="#161b22" stroke="#d2a8ff" stroke-width="4"/>
+    <path d="M37 42H103V87H68L50 103V87H37Z" fill="none" stroke="#d2a8ff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M50 58H90M50 72H79" stroke="#d2a8ff" stroke-width="4" stroke-linecap="round"/>
+    <text x="70" y="160" fill="#d2a8ff" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">04 DECISION</text>
+    <text x="70" y="185" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Communicate risk</text>
+    <text x="70" y="203" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">and tradeoffs</text>
+  </g>
+
+  <g transform="translate(956 116)">
+    <circle cx="70" cy="60" r="60" fill="#161b22" stroke="#ff7b72" stroke-width="4"/>
+    <path d="M70 23V99M32 99H108M43 99L70 45L97 99M51 77H89" fill="none" stroke="#ff7b72" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M112 37C125 47 125 63 112 73M28 37C15 47 15 63 28 73" fill="none" stroke="#ff7b72" stroke-width="4" stroke-linecap="round"/>
+    <text x="70" y="160" fill="#ff7b72" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">05 IMPACT</text>
+    <text x="70" y="185" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Improve reliability</text>
+    <text x="70" y="203" fill="#8b949e" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">and learning</text>
+  </g>
+
+  <rect x="48" y="346" width="1104" height="38" rx="7" fill="#161b22"/>
+  <rect x="48" y="346" width="248" height="38" rx="7" fill="#1f6feb"/>
+  <text x="72" y="371" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">RESEARCH RIGOR</text>
+  <text x="330" y="371" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">REPRODUCIBILITY</text>
+  <text x="586" y="371" fill="#f2a900" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">TRACEABILITY</text>
+  <text x="800" y="371" fill="#d2a8ff" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">CLARITY</text>
+  <text x="974" y="371" fill="#ff7b72" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">FIELD VALUE</text>
+</svg>

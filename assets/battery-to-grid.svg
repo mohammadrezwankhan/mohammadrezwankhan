@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Battery-to-grid engineering system map</title>
+  <desc id="desc">Six connected engineering stages from cell physics through grid services</desc>
+  <rect width="1200" height="430" rx="16" fill="#f6f8fa"/>
+  <text x="50" y="55" fill="#24292f" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700">BATTERY-TO-GRID ENGINEERING SYSTEM</text>
+  <text x="50" y="84" fill="#57606a" font-family="Segoe UI, Arial, sans-serif" font-size="16">A traceable path from physical behavior to dependable energy services</text>
+
+  <path d="M148 184H245M345 184H442M542 184H639M739 184H836M936 184H1028" stroke="#8c959f" stroke-width="4"/>
+  <path d="M234 174L250 184L234 194M431 174L447 184L431 194M628 174L644 184L628 194M825 174L841 184L825 194M1017 174L1033 184L1017 194" fill="none" stroke="#8c959f" stroke-width="4"/>
+
+  <g transform="translate(50 112)">
+    <rect width="98" height="144" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="3"/>
+    <rect x="34" y="-12" width="30" height="13" rx="3" fill="#0969da"/>
+    <rect x="15" y="21" width="68" height="95" rx="6" fill="#ddf4ff"/>
+    <path d="M52 34L33 71H53L41 101L70 62H51L64 34Z" fill="#0969da"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">CELL</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">ECM + heat</text>
+  </g>
+
+  <g transform="translate(247 112)">
+    <circle cx="49" cy="72" r="49" fill="#fff8c5" stroke="#bf8700" stroke-width="3"/>
+    <path d="M49 29V71L72 91" fill="none" stroke="#9a6700" stroke-width="6" stroke-linecap="round"/>
+    <path d="M49 12V22M49 122V132M-11 72H-1M99 72H109" stroke="#bf8700" stroke-width="4"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">THERMAL</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Cooling + safety</text>
+  </g>
+
+  <g transform="translate(444 112)">
+    <rect x="0" y="23" width="98" height="98" rx="14" fill="#dafbe1" stroke="#1a7f37" stroke-width="3"/>
+    <path d="M17 83L34 65L50 80L68 52L83 70" fill="none" stroke="#1a7f37" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="34" cy="65" r="5" fill="#1a7f37"/>
+    <circle cx="68" cy="52" r="5" fill="#1a7f37"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">BMS</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">SOC + estimation</text>
+  </g>
+
+  <g transform="translate(641 112)">
+    <rect x="0" y="23" width="98" height="98" rx="14" fill="#ffebe9" stroke="#cf222e" stroke-width="3"/>
+    <path d="M17 72H37L43 49L56 96L64 72H82" fill="none" stroke="#cf222e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">CONVERTER</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">DC link + control</text>
+  </g>
+
+  <g transform="translate(838 112)">
+    <rect x="0" y="23" width="98" height="98" rx="14" fill="#fbefff" stroke="#8250df" stroke-width="3"/>
+    <path d="M19 47H79M19 72H79M19 97H79" stroke="#8250df" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="30" cy="47" r="6" fill="#8250df"/>
+    <circle cx="62" cy="72" r="6" fill="#8250df"/>
+    <circle cx="45" cy="97" r="6" fill="#8250df"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">BESS</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">QA/QC + evidence</text>
+  </g>
+
+  <g transform="translate(1035 112)">
+    <path d="M49 21V121M7 121H91M18 121L49 40L80 121M28 92H70M35 70H63" fill="none" stroke="#0969da" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M99 42C112 52 112 72 99 82M-1 42C-14 52-14 72-1 82" fill="none" stroke="#1a7f37" stroke-width="4" stroke-linecap="round"/>
+    <text x="49" y="169" fill="#24292f" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">GRID</text>
+    <text x="49" y="191" fill="#57606a" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13">Reliable services</text>
+  </g>
+
+  <rect x="50" y="342" width="1100" height="51" rx="8" fill="#24292f"/>
+  <text x="83" y="375" fill="#7ee787" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">THREAD OF EVIDENCE</text>
+  <text x="300" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">assumptions</text>
+  <circle cx="410" cy="369" r="4" fill="#8c959f"/>
+  <text x="432" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">tests</text>
+  <circle cx="495" cy="369" r="4" fill="#8c959f"/>
+  <text x="517" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">uncertainty</text>
+  <circle cx="627" cy="369" r="4" fill="#8c959f"/>
+  <text x="649" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">traceability</text>
+  <circle cx="752" cy="369" r="4" fill="#8c959f"/>
+  <text x="774" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">decision</text>
+  <circle cx="860" cy="369" r="4" fill="#8c959f"/>
+  <text x="882" y="375" fill="#f6f8fa" font-family="Segoe UI, Arial, sans-serif" font-size="16">field feedback</text>
+</svg>
