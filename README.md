@@ -49,7 +49,7 @@ estimation, BESS quality assurance, and smart-grid integration.
 
 [![MATLAB validation](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml/badge.svg)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml)
 [![Latest release](https://img.shields.io/github/v/release/mohammadrezwankhan/matlab-simulink-energy-lab?label=release&color=0B6E4F)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
-[![GitHub stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=flat&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=flat&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
 [![License](https://img.shields.io/github/license/mohammadrezwankhan/matlab-simulink-energy-lab?color=0A66C2)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/LICENSE)
 
 The
@@ -137,7 +137,7 @@ connects simulation output to an engineering question.
 <div align="center">
 
 [![Followers](https://img.shields.io/github/followers/mohammadrezwankhan?style=for-the-badge&logo=github&label=Followers&color=24292F)](https://github.com/mohammadrezwankhan?tab=followers)
-[![Energy Lab stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Energy%20Lab%20Stars&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/stargazers)
+[![Energy Lab stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Energy%20Lab%20Stars&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
 [![Energy Lab forks](https://img.shields.io/github/forks/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Forks&color=0A66C2)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/forks)
 
 [![Latest release](https://img.shields.io/github/v/release/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Latest%20Release&color=0B6E4F)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
