@@ -25,6 +25,21 @@ estimation, BESS quality assurance, and smart-grid integration.
 > **Current mission:** build inspectable, reproducible energy-system tools that
 > help researchers and engineers move from assumptions to defensible results.
 
+## Shareable Project Path
+
+Use this sequence when sharing the portfolio with a researcher, engineer, or
+project team:
+
+1. Start with the [MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) for runnable battery, thermal, estimation, converter, and BESS reference models.
+2. Read the [Battery Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) for source-backed assumptions and validation checklists.
+3. Explore the [Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer) for transparent capacity-fade fitting and bounded end-of-life projections.
+4. Compare [VoltRL](https://github.com/mohammadrezwankhan/voltrl) for an audit-ready battery-arbitrage benchmark with explicit synthetic and historical information protocols.
+5. Move toward delivery with the [BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) and [Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) for evidence templates and grid-support concepts.
+
+Each project README provides its quickstart, scope boundary, validation path,
+contribution guidance, and license so the work can be shared without losing
+its engineering context.
+
 ## From Cell Physics To Grid Decisions
 
 <div align="center">
@@ -85,7 +100,7 @@ connects simulation output to an engineering question.
 | **[BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit)** | Inspection logic and evidence templates for utility-scale battery energy storage projects. | ![License](https://img.shields.io/github/license/mohammadrezwankhan/bess-qaqc-toolkit?style=flat-square&color=0B6E4F) |
 | **[Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook)** | Practical engineering guidance for grid-forming storage, dispatch, and renewable integration. | ![License](https://img.shields.io/github/license/mohammadrezwankhan/smart-grid-storage-playbook?style=flat-square&color=0A66C2) |
 | **[Battery Power Models](https://github.com/mohammadrezwankhan/battery-power-models)** | Tested MATLAB and Python references for battery thermal response and DC-link sizing. | ![Language](https://img.shields.io/github/languages/top/mohammadrezwankhan/battery-power-models?style=flat-square&color=E16737) |
-| **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | Power-system and voltage-control engineering experiments. | ![Language](https://img.shields.io/github/languages/top/mohammadrezwankhan/voltrl?style=flat-square&color=8957E5) |
+| **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | Audit-ready finite-state battery-arbitrage benchmark under synthetic and historical wholesale prices. | ![Language](https://img.shields.io/github/languages/top/mohammadrezwankhan/voltrl?style=flat-square&color=8957E5) |
 
 ## Technical Toolbox
 
