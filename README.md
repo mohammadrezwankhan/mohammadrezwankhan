@@ -1,191 +1,92 @@
-<!-- markdownlint-disable MD001 MD013 MD033 MD041 MD060 -->
+<!-- markdownlint-disable MD013 MD033 MD041 MD060 -->
 
 <div align="center">
 
-<img src="./assets/profile-hero.svg" alt="Mohammad Rezwan Khan, battery energy storage researcher and engineering leader" width="100%">
+<img src="./assets/profile-hero.svg" alt="Mohammad Rezwan Khan, battery systems and BESS R&amp;D engineer" width="100%">
 
 <br>
 
-[![Website](https://img.shields.io/badge/Portfolio-rezwankhan.tech-0B6E4F?style=for-the-badge&logo=googlechrome&logoColor=white)](https://rezwankhan.tech/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mohammad_Rezwan_Khan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohammadrezwankhan)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--1532--0598-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-1532-0598)
-
-[![GitHub Developer Program](https://img.shields.io/badge/GitHub-Developer_Program_Member-24292F?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan)
-[![GitHub Pro](https://img.shields.io/badge/GitHub-Pro-8957E5?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan)
-[![Public Sponsor](https://img.shields.io/badge/Public-Sponsor-EA4AAA?style=flat-square&logo=githubsponsors&logoColor=white)](https://github.com/mohammadrezwankhan?tab=sponsoring)
-[![Profile views](https://komarev.com/ghpvc/?username=mohammadrezwankhan&style=flat-square&color=0B6E4F&label=PROFILE+VIEWS)](https://github.com/mohammadrezwankhan)
+[Portfolio](https://rezwankhan.tech/) ·
+[Publications](https://rezwankhan.tech/publications/) ·
+[LinkedIn](https://www.linkedin.com/in/mohammadrezwankhan) ·
+[ORCID](https://orcid.org/0000-0002-1532-0598)
 
 </div>
 
-I turn **battery physics, thermal behavior, and power-system requirements** into
-models, validation evidence, and practical engineering decisions. My work spans
-lithium-ion battery safety, battery thermal management, real-time state
-estimation, BESS quality assurance, and smart-grid integration.
+I turn **battery thermal behavior, power-conversion constraints, and QA
+requirements** into auditable engineering decisions. My work connects
+lithium-ion battery models, BESS delivery evidence, and smart-grid control from
+physical assumptions to reproducible tests.
 
-> **Current mission:** build inspectable, reproducible energy-system tools that
-> help researchers and engineers move from assumptions to defensible results.
+**Electrical R&D engineer** · **PhD in Energy Technology, Aalborg University**<br>
+**MATLAB/Simulink + Python** · Battery systems · BESS QA/QC · Smart grids
 
-## Shareable Project Path
+> **Current mission:** build inspectable energy-system tools that help
+> researchers and engineers move from assumptions to defensible results.
 
-Use this sequence when sharing the portfolio with a researcher, engineer, or
-project team:
+## Research → Implementation
 
-1. Start with the [MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) for runnable battery, thermal, estimation, converter, and BESS reference models.
-2. Read the [Battery Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) for source-backed assumptions and validation checklists.
-3. Explore the [Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer) for transparent capacity-fade fitting and bounded end-of-life projections.
-4. Compare [VoltRL](https://github.com/mohammadrezwankhan/voltrl) for an audit-ready battery-arbitrage benchmark with explicit synthetic and historical information protocols.
-5. Move toward delivery with the [BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) and [Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) for evidence templates and grid-support concepts.
+The DOI anchors the scientific record; the linked repositories expose selected
+equations, assumptions, tests, and engineering limits.
 
-Each project README provides its quickstart, scope boundary, validation path,
-contribution guidance, and license so the work can be shared without losing
-its engineering context.
-
-## From Cell Physics To Grid Decisions
-
-<div align="center">
-
-<img src="./assets/battery-to-grid.svg" alt="Battery-to-grid engineering system map linking cell physics, thermal management, BMS estimation, power conversion, BESS assurance, and grid services" width="100%">
-
-</div>
-
-| Research and modeling | Deployment and assurance | Technical leadership |
-|---|---|---|
-| Electro-thermal models, parameter identification, SOC estimation, multiphysics analysis, and validation design. | BESS QA/QC, commissioning evidence, requirement traceability, risk review, and performance verification. | Cross-functional engineering, research translation, technical roadmaps, open-source stewardship, and decision-ready communication. |
-
-## Engineering Value Chain
-
-<div align="center">
-
-<img src="./assets/engineering-value.svg" alt="Engineering value chain from research question through model, evidence, decision, and field impact" width="100%">
-
-</div>
-
-## Flagship Energy Lab
-
-[![MATLAB validation](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml/badge.svg)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml)
-[![Latest release](https://img.shields.io/github/v/release/mohammadrezwankhan/matlab-simulink-energy-lab?label=release&color=0B6E4F)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
-[![GitHub stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=flat&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
-[![License](https://img.shields.io/github/license/mohammadrezwankhan/matlab-simulink-energy-lab?color=0A66C2)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/LICENSE)
-
-The
-**[MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)**
-is an open-source collection of inspectable battery and power-electronics
-reference models. Each model states its assumptions, validates its behavior, and
-connects simulation output to an engineering question.
-
-| Model track | What is demonstrated |
+| Research record | Open implementation |
 |---|---|
-| Battery dynamics | 1RC and 2RC equivalent-circuit models with toolbox-free parameter identification and held-out pulse-profile validation. |
-| Thermal management | Lumped electro-thermal, six-cell liquid-cooling, and pouch-cell finite-volume models for heat generation, cooling sensitivity, and spatial nonuniformity. |
-| State estimation | A two-state extended Kalman filter for real-time state-of-charge estimation. |
-| Power conversion | Average-value converter references with deterministic validation tests. |
-| Verification | Thirteen base-MATLAB checks and four native Simulink checks verified on MATLAB R2026a. |
+| [Thermal Management of Battery Systems in Electric Vehicle and Smart Grid Application](https://doi.org/10.5278/vbn.phd.engsci.00174) — PhD thesis | [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) · [Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) |
+| [An Online Framework for State of Charge Determination of Battery Systems Using a Combined System Identification Approach](https://doi.org/10.1016/j.jpowsour.2013.07.092) — *Journal of Power Sources* | [Battery dynamics and SOC estimation](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
+| [Design of a Unified Controller Framework for Grid-tied and Grid-forming Battery Energy Storage System](https://doi.org/10.1109/IECON49645.2022.9968382) — IEEE IECON | [BESS control models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) · [Grid-service playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) |
 
-<div align="center">
-
-[![Two-RC battery parameter-identification benchmark comparing fitted and synthetic voltage records on calibration and held-out pulse profiles](https://raw.githubusercontent.com/mohammadrezwankhan/matlab-simulink-energy-lab/v0.7.0/assets/battery-2rc-identification-response.png)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.7.0)
-
-**[Explore models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** |
-**[Read v0.8.0 release notes](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.8.0)** |
-**[Open in MATLAB Online](https://matlab.mathworks.com/open/github/v1?repo=mohammadrezwankhan/matlab-simulink-energy-lab)** |
-**[Contribute](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/CONTRIBUTING.md)**
-
-</div>
+[Browse all 17 publications](https://rezwankhan.tech/publications/) ·
+[Verify the ORCID record](https://orcid.org/0000-0002-1532-0598)
 
 ## Selected Engineering Work
 
-| Project | Purpose | Signal |
+| Project | Engineering question | Evidence you can inspect |
 |---|---|---|
-| **[Battery Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes)** | Research-backed guidance on BTMS assumptions, heat generation, temperature behavior, and model validation. | ![Stars](https://img.shields.io/github/stars/mohammadrezwankhan/battery-thermal-modeling-notes?style=flat-square&color=F2A900) |
-| **[BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit)** | Inspection logic and evidence templates for utility-scale battery energy storage projects. | ![License](https://img.shields.io/github/license/mohammadrezwankhan/bess-qaqc-toolkit?style=flat-square&color=0B6E4F) |
-| **[Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook)** | Practical engineering guidance for grid-forming storage, dispatch, and renewable integration. | ![License](https://img.shields.io/github/license/mohammadrezwankhan/smart-grid-storage-playbook?style=flat-square&color=0A66C2) |
-| **[Battery Power Models](https://github.com/mohammadrezwankhan/battery-power-models)** | Tested MATLAB and Python references for battery thermal response and DC-link sizing. | ![Language](https://img.shields.io/github/languages/top/mohammadrezwankhan/battery-power-models?style=flat-square&color=E16737) |
-| **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | Audit-ready finite-state battery-arbitrage benchmark under synthetic and historical wholesale prices. | ![Language](https://img.shields.io/github/languages/top/mohammadrezwankhan/voltrl?style=flat-square&color=8957E5) |
+| **[MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** | How do battery, converter, and BESS-control models behave under explicit checks? | 18 check entry points; 31-result focused BESS suite; CI; [v0.9.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.9.0); held-out tests; explicit limitations. |
+| **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | How should battery arbitrage be benchmarked without information leakage? | Synthetic and historical protocols; regenerated experiments; pinned dependencies; provenance and checksum audits. |
+| **[Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer)** | How can capacity fade and bounded end-of-life be compared transparently? | Installable package; CLI; notebook; external CSV schema; CI and tests; explicit synthetic-demo limits. |
+| **[BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit)** | What evidence is required from supplier review through handover? | FAT/SAT and commissioning templates; executable readiness audits; structured evidence gates. |
+| **[Battery Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes)** | Which thermal assumptions and validation checks are defensible? | Source-backed assumptions; reproducible examples; validation checklist; deterministic tests. |
+| **[Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook)** | How do grid-service requests meet power, energy, SoC, frequency, and voltage constraints? | Executable grid-support references; constraint-aware examples; unit tests; documented boundaries. |
 
-## Technical Toolbox
+**Start here:** the [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
+connects 1RC/2RC battery dynamics, thermal models, SOC estimation, power
+conversion, and grid-tied/grid-forming BESS control in one validation-oriented
+repository.
 
-<div align="center">
+## Selected Upstream Contributions
 
-**Modeling and analysis**
+| Upstream project | Contribution |
+|---|---|
+| [EMHASS](https://github.com/davidusb-geek/emhass) | [Merged PR #1039](https://github.com/davidusb-geek/emhass/pull/1039): added the missing heat-topology guide. |
+| [GenX](https://github.com/GenXProject/GenX.jl) | [PR #918](https://github.com/GenXProject/GenX.jl/pull/918): fail fast when a myopic planning stage has no solution. |
+| [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): correct a malformed CVSS 4 vector. |
 
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
-![Simulink](https://img.shields.io/badge/Simulink-E16737?style=for-the-badge&logo=mathworks&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
+## Open Collaboration Priorities
 
-**Engineering domains**
+- Traceable physical-cell datasets and held-out measured validation for battery
+  parameter-identification models.
+- Validation-based cycle-life model selection with uncertainty intervals for
+  end-of-life and remaining-useful-life estimates.
+- Reproducible BESS acceptance evidence spanning FAT, SAT, commissioning,
+  energization, and handover.
 
-![Battery Systems](https://img.shields.io/badge/Battery_Systems-0B6E4F?style=for-the-badge&logo=electron&logoColor=white)
-![Thermal Management](https://img.shields.io/badge/Thermal_Management-D94F4F?style=for-the-badge&logo=hotjar&logoColor=white)
-![BESS](https://img.shields.io/badge/BESS-2E7D32?style=for-the-badge&logo=databricks&logoColor=white)
-![Smart Grids](https://img.shields.io/badge/Smart_Grids-F2A900?style=for-the-badge&logo=lightning&logoColor=111111)
-![State Estimation](https://img.shields.io/badge/State_Estimation-8957E5?style=for-the-badge&logo=target&logoColor=white)
+**Core tools:** MATLAB · Simulink · Python · NumPy/SciPy · Jupyter · GitHub Actions<br>
+**Domains:** electro-thermal modeling · BMS/SOC estimation · power electronics ·
+BESS assurance · grid-forming control
 
-**Delivery and reproducibility**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Markdown](https://img.shields.io/badge/Technical_Documentation-24292F?style=for-the-badge&logo=markdown&logoColor=white)
-![Open Source](https://img.shields.io/badge/Open_Source-3DA639?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
-
-</div>
-
-## GitHub Achievements
-
-<div align="center">
-
-[<img src="./assets/github-achievements.svg" alt="Confirmed GitHub achievements: Starstruck, Public Sponsor, Galaxy Brain, Pair Extraordinaire x4, Pull Shark x4, YOLO, and Quickdraw" width="100%">](https://github.com/mohammadrezwankhan?tab=achievements)
-
-[![Starstruck](https://img.shields.io/badge/Starstruck-Unlocked-F2A900?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=starstruck&tab=achievements)
-[![Galaxy Brain](https://img.shields.io/badge/Galaxy_Brain-Unlocked-8957E5?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=galaxy-brain&tab=achievements)
-[![Pair Extraordinaire x4](https://img.shields.io/badge/Pair_Extraordinaire-x4-0A66C2?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=pair-extraordinaire&tab=achievements)
-[![Pull Shark x4](https://img.shields.io/badge/Pull_Shark-x4-1F6FEB?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=pull-shark&tab=achievements)
-[![YOLO](https://img.shields.io/badge/YOLO-Unlocked-D94F4F?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=yolo&tab=achievements)
-[![Quickdraw](https://img.shields.io/badge/Quickdraw-Unlocked-E16737?style=flat-square&logo=github&logoColor=white)](https://github.com/mohammadrezwankhan?achievement=quickdraw&tab=achievements)
-
-</div>
-
-## Live Engineering Signals
-
-<div align="center">
-
-[![Followers](https://img.shields.io/github/followers/mohammadrezwankhan?style=for-the-badge&logo=github&label=Followers&color=24292F)](https://github.com/mohammadrezwankhan?tab=followers)
-[![Energy Lab stars](https://img.shields.io/github/stars/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Energy%20Lab%20Stars&color=F2A900)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
-[![Energy Lab forks](https://img.shields.io/github/forks/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Forks&color=0A66C2)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/forks)
-
-[![Latest release](https://img.shields.io/github/v/release/mohammadrezwankhan/matlab-simulink-energy-lab?style=for-the-badge&logo=github&label=Latest%20Release&color=0B6E4F)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/latest)
-[![Validation](https://img.shields.io/badge/Automated_Checks-17-8957E5?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/actions/workflows/matlab-validation.yml)
-[![MATLAB](https://img.shields.io/badge/Verified-MATLAB_R2026a-E16737?style=for-the-badge&logo=mathworks&logoColor=white)](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab#run-every-check)
-
-</div>
-
-## Research Identity
-
-My PhD research at Aalborg University,
-**"Thermal Management of Battery Systems in Electric Vehicle and Smart Grid
-Application,"** connects battery thermal management, electrical
-characterization, and energy-storage control across electric-vehicle and
-smart-grid applications.
-
-[![ORCID record](https://img.shields.io/badge/Research_Record-View_on_ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-1532-0598)
-
-## Build With Me
-
-I welcome substantive collaboration around battery models, validation datasets,
-BESS engineering evidence, and reproducible energy-system research. Good starting
-points are the
-**[Energy Lab roadmap](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab#what-should-come-next)**
-and its **[open issues](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/issues)**.
+I welcome substantive collaboration around models, validation datasets, BESS
+engineering evidence, and reproducible energy-system research. Start with the
+[Energy Lab roadmap](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab#what-should-come-next)
+or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/issues).
 
 <div align="center">
 
 **Battery insight. Engineering evidence. Grid impact.**
 
-[Website](https://rezwankhan.tech/) |
-[LinkedIn](https://www.linkedin.com/in/mohammadrezwankhan) |
-[ORCID](https://orcid.org/0000-0002-1532-0598) |
-[GitHub Projects](https://github.com/mohammadrezwankhan?tab=repositories)
+[Website](https://rezwankhan.tech/) ·
+[LinkedIn](https://www.linkedin.com/in/mohammadrezwankhan) ·
+[ORCID](https://orcid.org/0000-0002-1532-0598) ·
+[GitHub repositories](https://github.com/mohammadrezwankhan?tab=repositories)
 
 </div>
