@@ -51,14 +51,43 @@ equations, assumptions, tests, and engineering limits.
 
 **Start here:** the [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
 connects 1RC/2RC battery dynamics, thermal models, SOC estimation, power
-conversion, and grid-tied/grid-forming BESS control in one validation-oriented
-repository.
+conversion, and grid-tied/grid-forming BESS control in one deterministically
+regression-tested reference repository with explicit validation limits.
+
+## Project Maturity and Validation
+
+These labels describe the evidence currently published; they are not claims of
+hardware qualification, grid-code compliance, or field validation.
+
+| Repository | Lifecycle | Published evidence tier | Stable API | Release/archive |
+|---|---|---|---|---|
+| Energy Lab | Active reference | Regression-tested; numerically verified; synthetic holdout evaluated | Not applicable | Versioned GitHub releases |
+| Battery Cycle-Life Analyzer | Alpha package | Unit-tested; synthetic holdout evaluated | No | Versioned package repository |
+| VoltRL | Research artifact | Protocol audited; synthetic and historical backtests | No | Commit-bound result bundles |
+| BESS QA/QC Toolkit | Draft toolkit | Parser/test verified; policy checks exercised on reference data | No | Repository snapshots |
+| Thermal Modeling Notes | Living handbook | Source-reviewed notes; deterministic examples | Not applicable | Repository snapshots |
+| Smart Grid Storage Playbook | Living handbook | Unit-tested reference calculations | Not applicable | Repository snapshots |
+
+**Validation vocabulary:** *unit-tested* means function-level expected behavior;
+*regression-tested* means deterministic outputs reproduced in CI; *numerically
+verified* means analytic, conservation, or convergence checks; and *synthetic
+holdout evaluated* means evaluation on generated unseen profiles. I reserve
+*measured-data validated*, *independently replicated*, *HIL/field evaluated*,
+and *qualified/certified* for projects that publish evidence meeting those
+stronger definitions.
 
 ## Selected Upstream Contributions
 
+### Merged
+
 | Upstream project | Contribution |
 |---|---|
-| [EMHASS](https://github.com/davidusb-geek/emhass) | [Merged PR #1039](https://github.com/davidusb-geek/emhass/pull/1039): added the missing heat-topology guide. |
+| [EMHASS](https://github.com/davidusb-geek/emhass) | [PR #1039](https://github.com/davidusb-geek/emhass/pull/1039): added the missing heat-topology guide. |
+
+### Under review
+
+| Upstream project | Contribution |
+|---|---|
 | [GenX](https://github.com/GenXProject/GenX.jl) | [PR #918](https://github.com/GenXProject/GenX.jl/pull/918): fail fast when a myopic planning stage has no solution. |
 | [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): correct a malformed CVSS 4 vector. |
 
