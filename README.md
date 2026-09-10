@@ -31,7 +31,7 @@ equations, assumptions, tests, and engineering limits.
 
 | Research record | Open implementation |
 |---|---|
-| [Thermal Management of Battery Systems in Electric Vehicle and Smart Grid Application](https://doi.org/10.5278/vbn.phd.engsci.00174) — PhD thesis | [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) · [Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) |
+| [Thermal Management of Battery Systems in Electric Vehicle and Smart Grid Application](https://doi.org/10.5278/vbn.phd.engsci.00174) — PhD thesis | [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
 | [An Online Framework for State of Charge Determination of Battery Systems Using a Combined System Identification Approach](https://doi.org/10.1016/j.jpowsour.2013.07.092) — *Journal of Power Sources* | [Battery dynamics and SOC estimation](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
 | [Design of a Unified Controller Framework for Grid-tied and Grid-forming Battery Energy Storage System](https://doi.org/10.1109/IECON49645.2022.9968382) — IEEE IECON | [BESS control models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) · [Grid-service playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) |
 
@@ -46,7 +46,7 @@ equations, assumptions, tests, and engineering limits.
 | **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | How should battery arbitrage be benchmarked without information leakage? | Synthetic and historical protocols; regenerated experiments; pinned dependencies; provenance and checksum audits. |
 | **[Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer)** | How can capacity fade and bounded end-of-life be compared transparently? | Installable package; CLI; notebook; external CSV schema; CI and tests; explicit synthetic-demo limits. |
 | **[BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit)** | What evidence is required from supplier review through handover? | FAT/SAT and commissioning templates; executable readiness audits; structured evidence gates. |
-| **[Battery Thermal Modeling Notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes)** | Which thermal assumptions and validation checks are defensible? | Source-backed assumptions; reproducible examples; validation checklist; deterministic tests. |
+| **[Datacenter Twin Lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab)** | How do utility outages, generator failures, and finite battery reserves affect power continuity? | Local-first Python simulator; [zero-install browser demo](https://mohammadrezwankhan.github.io/datacenter-twin-lab/); five reproducible synthetic scenarios; energy-balance checks; sensitivity analysis and exportable reports. |
 | **[Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook)** | How do grid-service requests meet power, energy, SoC, frequency, and voltage constraints? | Executable grid-support references; constraint-aware examples; unit tests; documented boundaries. |
 
 **Start here:** the [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
@@ -65,7 +65,7 @@ hardware qualification, grid-code compliance, or field validation.
 | Battery Cycle-Life Analyzer | Alpha package | Unit-tested; synthetic holdout evaluated | No | Versioned package repository |
 | VoltRL | Research artifact | Protocol audited; synthetic and historical backtests | No | Commit-bound result bundles |
 | BESS QA/QC Toolkit | Draft toolkit | Parser/test verified; policy checks exercised on reference data | No | Repository snapshots |
-| Thermal Modeling Notes | Living handbook | Source-reviewed notes; deterministic examples | Not applicable | Repository snapshots |
+| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v0.3.0a0 prerelease](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v0.3.0a0) |
 | Smart Grid Storage Playbook | Living handbook | Unit-tested reference calculations | Not applicable | Repository snapshots |
 
 **Validation vocabulary:** *unit-tested* means function-level expected behavior;
