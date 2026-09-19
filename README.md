@@ -119,3 +119,21 @@ or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-
 [GitHub repositories](https://github.com/mohammadrezwankhan?tab=repositories)
 
 </div>
+
+
+## Energy Evidence Atlas
+
+[![Conceptual cell-to-grid assembly linking battery cells, modules, BESS assurance, power conversion and the electrical load](assets/energy-evidence-atlas.webp)](https://rezwankhan.tech/energy-evidence-atlas/)
+
+**Follow an engineering question from the physical system to its source evidence.**
+
+The [Energy Evidence Atlas](https://rezwankhan.tech/energy-evidence-atlas/) brings
+my existing energy projects into a visual reading map, with a searchable project
+finder, research-to-code trails, commit-pinned sources and explicit limitations.
+The optional 3D assembly is conceptual; it does not represent selected equipment
+or establish hardware, facility or grid-code validation.
+
+- [Explore the cell-to-grid system tour](https://rezwankhan.tech/energy-evidence-atlas/#atlas).
+- [Find a model or toolkit](https://rezwankhan.tech/energy-evidence-atlas/#projects).
+- [Read source records and engineering limits](https://rezwankhan.tech/energy-evidence-atlas/evidence/).
+- [Try the bounded reserve calculation](https://rezwankhan.tech/energy-evidence-atlas/#browser-lab), then open the linked Datacenter Twin Lab for its full documented scenarios.
