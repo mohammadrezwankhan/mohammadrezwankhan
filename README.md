@@ -141,3 +141,13 @@ or establish hardware, facility or grid-code validation.
 - [Find a model or toolkit](https://rezwankhan.tech/energy-evidence-atlas/#projects).
 - [Read source records and engineering limits](https://rezwankhan.tech/energy-evidence-atlas/evidence/).
 - [Try the bounded reserve calculation](https://rezwankhan.tech/energy-evidence-atlas/#browser-lab), then open the linked Datacenter Twin Lab for its full documented scenarios.
+
+## Energy learning workspace
+
+Explore the [self-paced learning workspace](https://rezwankhan.tech/energy-evidence-atlas/#learning) alongside the [cell-to-grid 3D tour](https://rezwankhan.tech/energy-evidence-atlas/#atlas):
+
+- **Battery & thermal:** [MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) and [Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer).
+- **Assurance & continuity:** [BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) and [Datacenter Twin Lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab).
+- **Dispatch & markets:** [VoltRL](https://github.com/mohammadrezwankhan/voltrl), [HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab), and [ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade).
+
+Progress is self-paced and stored locally in your browser. This workspace offers no certification; synthetic examples are for exploration and do not constitute field validation.
