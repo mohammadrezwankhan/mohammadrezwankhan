@@ -151,3 +151,10 @@ Explore the [self-paced learning workspace](https://rezwankhan.tech/energy-evide
 - **Dispatch & markets:** [VoltRL](https://github.com/mohammadrezwankhan/voltrl), [HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab), and [ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade).
 
 Progress is self-paced and stored locally in your browser. This workspace offers no certification; synthetic examples are for exploration and do not constitute field validation.
+
+
+## Public browser demo collection
+
+Explore [45 browser demos on MKLab](https://mklab.co.technology/), including eight new demonstrations for service booking, health journaling, chamber administration, preparedness, garment-sector evidence and tax-rebate arithmetic. Each app includes usage steps and visible limits.
+
+The new source repositories remain private; the public website provides synthetic browser editions. Use fictional information only. These demos do not establish clinical, legal, financial or emergency-service readiness.
