@@ -6,8 +6,8 @@
 
 <br>
 
-[Portfolio](https://rezwankhan.tech/) ·
-[Publications](https://rezwankhan.tech/publications/) ·
+[Portfolio](https://mrkhan.co.technology/) ·
+[Publications](https://mrkhan.co.technology/publications/) ·
 [LinkedIn](https://www.linkedin.com/in/mohammadrezwankhan) ·
 [ORCID](https://orcid.org/0000-0002-1532-0598)
 
@@ -35,7 +35,7 @@ equations, assumptions, tests, and engineering limits.
 | [An Online Framework for State of Charge Determination of Battery Systems Using a Combined System Identification Approach](https://doi.org/10.1016/j.jpowsour.2013.07.092) — *Journal of Power Sources* | [Battery dynamics and SOC estimation](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) |
 | [Design of a Unified Controller Framework for Grid-tied and Grid-forming Battery Energy Storage System](https://doi.org/10.1109/IECON49645.2022.9968382) — IEEE IECON | [BESS control models](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) · [Grid-service playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) |
 
-[Browse all 17 publications](https://rezwankhan.tech/publications/) ·
+[Browse all 17 publications](https://mrkhan.co.technology/publications/) ·
 [Verify the ORCID record](https://orcid.org/0000-0002-1532-0598)
 
 ## Selected Engineering Work
@@ -44,11 +44,11 @@ equations, assumptions, tests, and engineering limits.
 |---|---|---|
 | **[MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** | How do battery, converter, and BESS-control models behave under explicit checks? | Current `main`: 20 Base MATLAB checks; 25 general entry points plus one unified-BESS entry point (26 total); 31-result focused BESS suite; CI; latest tagged release [v0.10.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.10.0); held-out tests; explicit limitations. |
 | **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | How should battery arbitrage be benchmarked without information leakage? | Synthetic and historical protocols; regenerated experiments; pinned dependencies; provenance and checksum audits. |
-| **[HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab)** | How do hybrid-energy assumptions translate into a bounded dispatch and storage calculation? | [Standalone browser preview](https://mohammadrezwankhan.github.io/helioforge-energy-lab/); local Python API; scenario and energy-balance tests; browser/API checks; explicit synthetic-data and screening limits. |
-| **[ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade)** | How do wind-forecast and direct-offer strategies change hypothetical revenue? | [Standalone browser preview](https://mohammadrezwankhan.github.io/zephyrtrade/); reproducible synthetic fixtures; Python/browser numerical parity; Linux CI; no live prices or order execution. |
+| **[HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab)** | How do hybrid-energy assumptions translate into a bounded dispatch and storage calculation? | [Standalone browser preview](https://mkgrid.co.technology/); local Python API; scenario and energy-balance tests; browser/API checks; explicit synthetic-data and screening limits. |
+| **[ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade)** | How do wind-forecast and direct-offer strategies change hypothetical revenue? | [Standalone browser preview](https://mktrade.co.business/); reproducible synthetic fixtures; Python/browser numerical parity; Linux CI; no live prices or order execution. |
 | **[Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer)** | How can capacity fade and bounded end-of-life be compared transparently? | Installable package; CLI; notebook; external CSV schema; CI and tests; explicit synthetic-demo limits. |
 | **[BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit)** | What evidence is required from supplier review through handover? | FAT/SAT and commissioning templates; executable readiness audits; structured evidence gates. |
-| **[Datacenter Twin Lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab)** | How do utility outages, generator failures, and finite battery reserves affect power continuity? | Local-first Python simulator; [zero-install browser demo](https://mohammadrezwankhan.github.io/datacenter-twin-lab/); five reproducible synthetic scenarios; energy-balance checks; sensitivity analysis and exportable reports. |
+| **[Datacenter Twin Lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab)** | How do utility outages, generator failures, and finite battery reserves affect power continuity? | Local-first Python simulator; [zero-install browser demo](https://khanlab.co.technology/); eighteen documented synthetic scenarios and twelve lessons; energy-balance checks; sensitivity analysis and exportable reports. |
 | **[Smart Grid Storage Playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook)** | How do grid-service requests meet power, energy, SoC, frequency, and voltage constraints? | Executable grid-support references; constraint-aware examples; unit tests; documented boundaries. |
 
 **Start here:** the [Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)
@@ -69,7 +69,7 @@ hardware qualification, grid-code compliance, or field validation.
 | HelioForge Energy Lab | Research preview | Synthetic scenario and conservation checks; Python 3.11–3.13 CI; browser/API tests; no field validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/helioforge-energy-lab/releases/tag/preview-2026.09.30.1) |
 | ZephyrTrade | Research preview | Synthetic backtests; Python 3.11/3.12 CI; browser/native numerical parity; no market-performance validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/zephyrtrade/releases/tag/preview-2026.09.30) |
 | BESS QA/QC Toolkit | Draft toolkit | Parser/test verified; policy checks exercised on reference data | No | Repository snapshots |
-| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v0.3.0a0 prerelease](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v0.3.0a0) |
+| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v1.0.0 release](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v1.0.0) |
 | Smart Grid Storage Playbook | Living handbook | Unit-tested reference calculations | Not applicable | Repository snapshots |
 
 **Validation vocabulary:** *unit-tested* means function-level expected behavior;
@@ -117,7 +117,7 @@ or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-
 
 **Battery insight. Engineering evidence. Grid impact.**
 
-[Website](https://rezwankhan.tech/) ·
+[Website](https://mrkhan.co.technology/) ·
 [LinkedIn](https://www.linkedin.com/in/mohammadrezwankhan) ·
 [ORCID](https://orcid.org/0000-0002-1532-0598) ·
 [GitHub repositories](https://github.com/mohammadrezwankhan?tab=repositories)
@@ -127,24 +127,24 @@ or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-
 
 ## Energy Evidence Atlas
 
-[![Conceptual cell-to-grid assembly linking battery cells, modules, BESS assurance, power conversion and the electrical load](assets/energy-evidence-atlas.webp)](https://rezwankhan.tech/energy-evidence-atlas/)
+[![Conceptual cell-to-grid assembly linking battery cells, modules, BESS assurance, power conversion and the electrical load](assets/energy-evidence-atlas.webp)](https://mrkhan.co.technology/energy-evidence-atlas/)
 
 **Follow an engineering question from the physical system to its source evidence.**
 
-The [Energy Evidence Atlas](https://rezwankhan.tech/energy-evidence-atlas/) brings
+The [Energy Evidence Atlas](https://mrkhan.co.technology/energy-evidence-atlas/) brings
 my existing energy projects into a visual reading map, with a searchable project
 finder, research-to-code trails, commit-pinned sources and explicit limitations.
 The optional 3D assembly is conceptual; it does not represent selected equipment
 or establish hardware, facility or grid-code validation.
 
-- [Explore the cell-to-grid system tour](https://rezwankhan.tech/energy-evidence-atlas/#atlas).
-- [Find a model or toolkit](https://rezwankhan.tech/energy-evidence-atlas/#projects).
-- [Read source records and engineering limits](https://rezwankhan.tech/energy-evidence-atlas/evidence/).
-- [Try the bounded reserve calculation](https://rezwankhan.tech/energy-evidence-atlas/#browser-lab), then open the linked Datacenter Twin Lab for its full documented scenarios.
+- [Explore the cell-to-grid system tour](https://mrkhan.co.technology/energy-evidence-atlas/#atlas).
+- [Find a model or toolkit](https://mrkhan.co.technology/energy-evidence-atlas/#projects).
+- [Read source records and engineering limits](https://mrkhan.co.technology/energy-evidence-atlas/evidence/).
+- [Try the bounded reserve calculation](https://mrkhan.co.technology/energy-evidence-atlas/#browser-lab), then open the linked Datacenter Twin Lab for its full documented scenarios.
 
 ## Energy learning workspace
 
-Explore the [self-paced learning workspace](https://rezwankhan.tech/energy-evidence-atlas/#learning) alongside the [cell-to-grid 3D tour](https://rezwankhan.tech/energy-evidence-atlas/#atlas):
+Explore the [self-paced learning workspace](https://mrkhan.co.technology/energy-evidence-atlas/#learning) alongside the [cell-to-grid 3D tour](https://mrkhan.co.technology/energy-evidence-atlas/#atlas):
 
 - **Battery & thermal:** [MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) and [Battery Cycle-Life Analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer).
 - **Assurance & continuity:** [BESS QA/QC Toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) and [Datacenter Twin Lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab).
@@ -155,6 +155,25 @@ Progress is self-paced and stored locally in your browser. This workspace offers
 
 ## Public browser demo collection
 
-Explore [45 browser demos on MKLab](https://mklab.co.technology/), including eight new demonstrations for service booking, health journaling, chamber administration, preparedness, garment-sector evidence and tax-rebate arithmetic. Each app includes usage steps and visible limits.
+Explore [50 browser demos on MKLab](https://mklab.co.technology/), including eight new demonstrations for service booking, health journaling, chamber administration, preparedness, garment-sector evidence and tax-rebate arithmetic. Each app includes usage steps and visible limits.
 
 The new source repositories remain private; the public website provides synthetic browser editions. Use fictional information only. These demos do not establish clinical, legal, financial or emergency-service readiness.
+
+## Public laboratories and current source records
+
+- **[MKLab](https://mklab.co.technology/)**: Explore 50 public browser demos for energy, learning and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
+- **[HelioForge Energy Lab](https://mkgrid.co.technology/)**: Explore hybrid-energy architectures, linked lessons and bundled scenario results. The hosted preview shows bundled examples. New numerical runs require the separate local Python application; no calibrated plant control.
+- **[ZephyrTrade](https://mktrade.co.business/)**: Compare wind-market strategies and calculate hypothetical offers from synthetic observations. Synthetic historical data, not live prices, order execution or investment recommendations.
+- **[Datacenter Twin Lab](https://khanlab.co.technology/)**: Learn electrical continuity through twelve interactive lessons and inspectable energy ledgers. Uncalibrated synthetic electrical model; not facility safety, certified uptime or live equipment control.
+
+New MKLab additions include GridLoom Europe, Solmora Grid, Threadmark, Ionweave Control and JolPulse. Use their published synthetic-data boundaries; no operational forecast, charging-control or flood-warning claim is made.
+
+- [battery-power-models](https://github.com/mohammadrezwankhan/battery-power-models/tree/0d8532d478fe7dc5a0da019796cd346786ffdcf0): 6 unit tests in the linked CI run. [CI evidence](https://github.com/mohammadrezwankhan/battery-power-models/actions/runs/35528764843).
+- [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/tree/65df747ccf1ff0d2427ab8ba321b4c6839d0ad3b): 94 passed and 6 skipped tests per Python matrix job. [CI evidence](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/actions/runs/36689059076).
+- [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes/tree/afef3c2b52ab769fc20b53a07d41e0133c482b67): 84 unit tests in the linked CI run. [CI evidence](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes/actions/runs/35528751642).
+- [voltrl](https://github.com/mohammadrezwankhan/voltrl/tree/a2f7eed0886a5a4844e8db2764c0bfd88615d1d8): 67 benchmark tests; bundle audits are separate checks. [CI evidence](https://github.com/mohammadrezwankhan/voltrl/actions/runs/35528755213).
+- [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook/tree/caf54a81b4d76aa09a2ab8069d343c44e0e5467b): 151 unit tests in the linked CI run. [CI evidence](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook/actions/runs/35528758460).
+- [zephyrtrade](https://github.com/mohammadrezwankhan/zephyrtrade/tree/2d5461331a6bf752409e11f3a487700a363bd072): 86 passed tests per Python matrix job. [CI evidence](https://github.com/mohammadrezwankhan/zephyrtrade/actions/runs/36950218335).
+- [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab/tree/a01d0d5c79f53726baa6147ef830a12856d97ad9): 150 Python tests per matrix job; 88 browser journeys and 18 export checks are separate suites. [CI evidence](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/37106356093).
+
+Source and CI records reviewed 7 October 2026. Counts refer to individual jobs at linked commits, not totals across matrix jobs. [Current portfolio catalogue](https://mrkhan.co.technology/models/#browser-labs).
