@@ -69,7 +69,7 @@ hardware qualification, grid-code compliance, or field validation.
 | HelioForge Energy Lab | Research preview | Synthetic scenario and conservation checks; Python 3.11–3.13 CI; browser/API tests; no field validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/helioforge-energy-lab/releases/tag/preview-2026.09.30.1) |
 | ZephyrTrade | Research preview | Synthetic backtests; Python 3.11/3.12 CI; browser/native numerical parity; no market-performance validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/zephyrtrade/releases/tag/preview-2026.09.30) |
 | BESS QA/QC Toolkit | Draft toolkit | Parser/test verified; policy checks exercised on reference data | No | Repository snapshots |
-| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v2.0.0 release](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.0), source commit `424cf5349ea1f53d5d207a2d48af689774d878dc`; latest `main` CI [failed on 2026-10-12](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/38314821223) at [`6c40b70`](https://github.com/mohammadrezwankhan/datacenter-twin-lab/commit/6c40b7010f69c8f12414530c7a776b98e3883729) |
+| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v2.0.0 release](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.0), source commit `424cf5349ea1f53d5d207a2d48af689774d878dc`; historical `main` CI [failed on 2026-10-12](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/38314821223) at [`6c40b70`](https://github.com/mohammadrezwankhan/datacenter-twin-lab/commit/6c40b7010f69c8f12414530c7a776b98e3883729) |
 | Smart Grid Storage Playbook | Living handbook | Unit-tested reference calculations | Not applicable | Repository snapshots |
 
 **Validation vocabulary:** *unit-tested* means function-level expected behavior;
@@ -92,8 +92,13 @@ stronger definitions.
 
 | Upstream project | Contribution |
 |---|---|
-| [GenX](https://github.com/GenXProject/GenX.jl) | [PR #918](https://github.com/GenXProject/GenX.jl/pull/918): fail fast when a myopic planning stage has no solution. |
 | [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): correct a malformed CVSS 4 vector. |
+
+### Closed without merge
+
+| Upstream project | Contribution |
+|---|---|
+| [GenX](https://github.com/GenXProject/GenX.jl) | [PR #918](https://github.com/GenXProject/GenX.jl/pull/918): Closed without merge (checked 17 October 2026): fail fast when a myopic planning stage has no solution. |
 
 ## Open Collaboration Priorities
 
@@ -155,19 +160,19 @@ Progress is self-paced and stored locally in your browser. This workspace offers
 
 ## Public browser demo collection
 
-Explore [68 browser demos on MKLab](https://mklab.co.technology/) (catalogue checked 2026-10-15) for energy, learning, civic information and everyday planning. Each app includes usage steps and visible limits.
+Explore [69 browser demos on MKLab](https://mklab.co.technology/) (catalogue checked 2026-10-17) for energy, learning, civic information and everyday planning. Each app includes usage steps and visible limits.
 
 The new source repositories remain private; the public website provides synthetic browser editions. Use fictional information only. These demos do not establish clinical, legal, financial or emergency-service readiness.
 
 ## Public laboratories and current source records
 
-- **[MKLab](https://mklab.co.technology/)**: Explore 68 public browser demos for energy, learning, civic information and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
+- **[MKLab](https://mklab.co.technology/)**: Explore 69 public browser demos for energy, learning, civic information and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
 - **[Intelligent UI](https://mrkhan.co.technology/#intelligent-ui)**: Local, no API; deterministic approved-source routing, no connected AI, and not an engineering approval.
 - **[HelioForge Energy Lab](https://mkgrid.co.technology/)**: Explore hybrid-energy architectures, linked lessons and bundled scenario results. The hosted preview shows bundled examples. New numerical runs require the separate local Python application; no calibrated plant control.
 - **[ZephyrTrade](https://mktrade.co.business/)**: Compare wind-market strategies and calculate hypothetical offers from synthetic observations. Synthetic historical data, not live prices, order execution or investment recommendations.
 - **[Datacenter Twin Lab](https://khanlab.co.technology/)**: Learn electrical continuity through 24 lessons, including 12 continuity and 12 infrastructure lessons, with 18 synthetic scenarios and inspectable energy ledgers. Uncalibrated synthetic electrical model; not facility safety, certified uptime or live equipment control.
 
-New MKLab additions include GridLoom Europe, Solmora Grid, Threadmark, Ionweave Control and JolPulse. Use their published synthetic-data boundaries; no operational forecast, charging-control or flood-warning claim is made.
+New MKLab additions include [Shomonnoy](https://mklab.co.technology/apps/shomonnoy/), GridLoom Europe, Solmora Grid, Threadmark, Ionweave Control and JolPulse. Use their published synthetic-data boundaries; no operational forecast, charging-control or flood-warning claim is made.
 
 - [battery-power-models](https://github.com/mohammadrezwankhan/battery-power-models/tree/0d8532d478fe7dc5a0da019796cd346786ffdcf0): 6 unit tests in the linked CI run. [CI evidence](https://github.com/mohammadrezwankhan/battery-power-models/actions/runs/35528764843).
 - [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/tree/65df747ccf1ff0d2427ab8ba321b4c6839d0ad3b): 94 passed and 6 skipped tests per Python matrix job. [CI evidence](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/actions/runs/36689059076).
@@ -178,3 +183,29 @@ New MKLab additions include GridLoom Europe, Solmora Grid, Threadmark, Ionweave 
 - [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab/tree/a01d0d5c79f53726baa6147ef830a12856d97ad9): 150 Python tests per matrix job; 88 browser journeys and 18 export checks are separate suites. [CI evidence](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/37106356093).
 
 Source and CI records reviewed 7 October 2026. Counts refer to individual jobs at linked commits, not totals across matrix jobs. [Current portfolio catalogue](https://mrkhan.co.technology/models/#browser-labs).
+
+
+## Complete public repository directory
+
+Snapshot checked **17 October 2026**: **18 public repositories — 12 non-forks (including this profile), 6 forks**. These counts exclude private repositories and are separate from the 69 MKLab demos. [Browse the repository directory and dated source records](https://mrkhan.co.technology/models/#repository-directory). Workflow results apply to their linked commits; they are not independent validation.
+
+| Repository | Type | Stable release at review |
+|---|---|---|
+| [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer) | Non-fork | [v0.2.0](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/releases/tag/v0.2.0) |
+| [battery-power-models](https://github.com/mohammadrezwankhan/battery-power-models) | Non-fork | No stable release listed |
+| [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Non-fork | No stable release listed |
+| [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Non-fork | No stable release listed |
+| [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab) | Non-fork | [v2.0.0](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.0) |
+| [helioforge-energy-lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab) | Non-fork | No stable release listed |
+| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Non-fork | [v0.11.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.11.0) |
+| [mohammadrezwankhan](https://github.com/mohammadrezwankhan/mohammadrezwankhan) | Non-fork | No stable release listed |
+| [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Non-fork | No stable release listed |
+| [thermoweave-battery-digital-twin](https://github.com/mohammadrezwankhan/thermoweave-battery-digital-twin) | Non-fork | No stable release listed |
+| [voltrl](https://github.com/mohammadrezwankhan/voltrl) | Non-fork | [v1.1.0](https://github.com/mohammadrezwankhan/voltrl/releases/tag/v1.1.0) |
+| [zephyrtrade](https://github.com/mohammadrezwankhan/zephyrtrade) | Non-fork | No stable release listed |
+| [advisory-database](https://github.com/mohammadrezwankhan/advisory-database) | Fork | No stable release listed |
+| [awesome-battery-data](https://github.com/mohammadrezwankhan/awesome-battery-data) | Fork | No stable release listed |
+| [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
+| [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
+| [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
+| [kividb](https://github.com/mohammadrezwankhan/kividb) | Fork | No stable release listed |
