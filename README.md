@@ -2,7 +2,16 @@
 
 <div align="center">
 
-<img src="./assets/profile-hero.svg" alt="Mohammad Rezwan Khan, battery systems and BESS R&amp;D engineer" width="100%">
+<h1>Mohammad Rezwan Khan</h1>
+
+<a href="https://mrkhan.co.technology/">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/engineering-hero-v2.webp">
+    <img src="./assets/engineering-hero.gif" alt="Engineering in motion: battery physics, executable models, review evidence, and hybrid energy systems" width="100%">
+  </picture>
+</a>
+
+<sub>Physics → models → evidence → energy systems. Illustrative; no live data.</sub>
 
 <br>
 
