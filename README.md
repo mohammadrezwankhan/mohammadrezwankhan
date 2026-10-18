@@ -190,7 +190,7 @@ Source and CI records reviewed 7 October 2026. Counts refer to individual jobs a
 
 ## Complete public repository directory
 
-Snapshot checked **17 October 2026**: **18 public repositories — 12 non-forks (including this profile), 6 forks**. These counts exclude private repositories and are separate from the 69 MKLab demos. [Browse the repository directory and dated source records](https://mrkhan.co.technology/models/#repository-directory). Workflow results apply to their linked commits; they are not independent validation.
+Snapshot checked **18 October 2026**: **17 owned public repositories — 12 non-forks (including this profile), 5 forks**. These counts exclude private and collaborator-owned repositories and are separate from the 69 MKLab demos. [Browse the live GitHub repository list](https://github.com/mohammadrezwankhan?tab=repositories) or the [portfolio directory and dated source records](https://mrkhan.co.technology/models/#repository-directory). Workflow results apply to their linked commits; they are not independent validation.
 
 | Repository | Type | Stable release at review |
 |---|---|---|
@@ -211,4 +211,3 @@ Snapshot checked **17 October 2026**: **18 public repositories — 12 non-forks 
 | [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
 | [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
 | [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
-| kividb | Fork | No stable release listed |
