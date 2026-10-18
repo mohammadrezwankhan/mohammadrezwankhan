@@ -217,4 +217,4 @@ Snapshot checked **17 October 2026**: **18 public repositories — 12 non-forks 
 | [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
 | [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
 | [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
-| [kividb](https://github.com/mohammadrezwankhan/kividb) | Fork | No stable release listed |
+| kividb | Fork | No stable release listed |
