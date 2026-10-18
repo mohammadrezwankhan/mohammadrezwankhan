@@ -2,7 +2,16 @@
 
 <div align="center">
 
-<img src="./assets/profile-hero.svg" alt="Mohammad Rezwan Khan, battery systems and BESS R&amp;D engineer" width="100%">
+<h1>Mohammad Rezwan Khan</h1>
+
+<a href="https://mrkhan.co.technology/">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/engineering-hero-v2.webp">
+    <img src="./assets/engineering-hero.gif" alt="Engineering in motion: battery physics, executable models, review evidence, and hybrid energy systems" width="100%">
+  </picture>
+</a>
+
+<sub>Physics → models → evidence → energy systems. Illustrative; no live data.</sub>
 
 <br>
 
@@ -208,4 +217,4 @@ Snapshot checked **17 October 2026**: **18 public repositories — 12 non-forks 
 | [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
 | [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
 | [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
-| [kividb](https://github.com/mohammadrezwankhan/kividb) | Fork | No stable release listed |
+| kividb | Fork | No stable release listed |
