@@ -103,12 +103,6 @@ stronger definitions.
 |---|---|
 | [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): correct a malformed CVSS 4 vector. |
 
-### Closed without merge
-
-| Upstream project | Contribution |
-|---|---|
-| [GenX](https://github.com/GenXProject/GenX.jl) | [PR #918](https://github.com/GenXProject/GenX.jl/pull/918): Closed without merge (checked 17 October 2026): fail fast when a myopic planning stage has no solution. |
-
 ## Open Collaboration Priorities
 
 - Traceable physical-cell datasets and held-out measured validation for battery
