@@ -135,8 +135,6 @@ or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-
 
 ## Energy Evidence Atlas
 
-[![Conceptual cell-to-grid assembly linking battery cells, modules, BESS assurance, power conversion and the electrical load](assets/energy-evidence-atlas.webp)](https://mrkhan.co.technology/energy-evidence-atlas/)
-
 **Follow an engineering question from the physical system to its source evidence.**
 
 The [Energy Evidence Atlas](https://mrkhan.co.technology/energy-evidence-atlas/) brings
