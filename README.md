@@ -4,6 +4,12 @@ The profile connects research, open implementations, validation vocabulary, and 
 
 **[Native-source lesson guide](docs/portfolio/) · [Offline interactive lab](docs/index.html) · [Lesson configuration](docs/lesson-config.json) · [Configuration schema](docs/lesson-config.schema.json) · [Portfolio at rezwankhan.tech](https://rezwankhan.tech)**
 
+## Previous animations
+
+[Open the previous-animation gallery](https://mohammadrezwankhan.github.io/mohammadrezwankhan/animations/) · [Local gallery](docs/animations/index.html)
+
+Earlier animated artwork, waveform demos, and original interactive experiences are linked alongside the current animations.
+
 ## Your first interactive result
 
 1. Download or clone this repository and open `docs/index.html` in a modern browser.
