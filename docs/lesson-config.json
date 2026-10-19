@@ -1,0 +1,90 @@
+{
+  "repository": "mohammadrezwankhan",
+  "domain": "DOMAIN_B",
+  "title": "Mohammad Rezwan Khan: Engineering & Research Portfolio",
+  "version": "2.0.0",
+  "author": "Mohammad Rezwan Khan",
+  "lessons": [
+    {
+      "id": "L01",
+      "title": "Portfolio System Architecture & Multi-Domain Taxonomies",
+      "level": "Beginner",
+      "duration": "20 mins",
+      "config_file": "registry/portfolio_matrix.json",
+      "summary": "Explore the unified taxonomy connecting battery chemistry, electrothermal modeling, power converter control, and wholesale energy trading.",
+      "inputs": [
+        "17 public open-source engineering repositories",
+        "PhD doctoral thesis research chapters"
+      ],
+      "parameters": {
+        "PrimaryDomains": 4,
+        "TotalFlagshipLabs": 12,
+        "InteractiveDashboardCount": 17
+      },
+      "checkpoints": [
+        "Verify cross-repository dependency tree",
+        "Understand unified design tokens and 2.5D visual standards"
+      ]
+    },
+    {
+      "id": "L02",
+      "title": "Interactive 2.5D Digital Twin Showcase Navigation",
+      "level": "Intermediate",
+      "duration": "35 mins",
+      "config_file": "registry/showcase_telemetry.json",
+      "summary": "Navigate the live interactive 3D perspective dashboard, test real-time physics sliders, and inspect telemetry streams across all models.",
+      "inputs": [
+        "Client browser WebGL/CSS 3D runtime",
+        "Live GitHub Pages hosted endpoints"
+      ],
+      "parameters": {
+        "FPS_Target": 60,
+        "TransitionCurve": "cubic-bezier(0.22, 1, 0.36, 1)"
+      },
+      "checkpoints": [
+        "Interact with live 2.5D card tilt mechanisms",
+        "Simulate live scenario parameter overrides"
+      ]
+    },
+    {
+      "id": "L03",
+      "title": "Verified Benchmark Replication Pipeline (MATLAB + Python)",
+      "level": "Advanced",
+      "duration": "50 mins",
+      "config_file": "registry/reproducibility_pipeline.json",
+      "summary": "Execute one-command end-to-end containerized test suites verifying mathematical accuracy across all published battery and grid models.",
+      "inputs": [
+        "Automated CI/CD test harness",
+        "Standard reference datasets (HPPC, WLTP, LMP)"
+      ],
+      "parameters": {
+        "ToleranceThreshold": 0.0001,
+        "DockerSupported": true
+      },
+      "checkpoints": [
+        "Reproduce all paper figures and tabular benchmarks",
+        "Verify 100% CI pass rate across all active branches"
+      ]
+    },
+    {
+      "id": "L04",
+      "title": "Industrial Collaboration, Citations & Open-Source Roadmap",
+      "level": "Production",
+      "duration": "60 mins",
+      "config_file": "registry/collaboration_manifest.json",
+      "summary": "Guidelines for enterprise adoption, academic citation (BibTeX/CFF), contributing PRs, and engaging in battery/BESS R&D consulting.",
+      "inputs": [
+        "Commercial BESS project specifications",
+        "Academic research inquiries"
+      ],
+      "parameters": {
+        "License": "MIT",
+        "AdoptionSupport": "Available"
+      },
+      "checkpoints": [
+        "Generate official BibTeX citation key",
+        "Access sponsorship and enterprise support channels"
+      ]
+    }
+  ]
+}
