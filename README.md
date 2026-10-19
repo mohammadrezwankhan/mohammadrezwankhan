@@ -6,7 +6,7 @@ The profile connects research, open implementations, validation vocabulary, and 
 
 ## Previous animations
 
-[Open the previous-animation gallery](https://mohammadrezwankhan.github.io/mohammadrezwankhan/animations/) · [Local gallery](docs/animations/index.html)
+[Open the live lab](https://mohammadrezwankhan.github.io/mohammadrezwankhan/) → **Previous animations** · [Open the local gallery](docs/animations/index.html)
 
 Earlier animated artwork, waveform demos, and original interactive experiences are linked alongside the current animations.
 
