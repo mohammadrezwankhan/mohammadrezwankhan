@@ -1,90 +1,318 @@
 {
-  "repository": "mohammadrezwankhan",
-  "domain": "DOMAIN_B",
-  "title": "Mohammad Rezwan Khan: Engineering & Research Portfolio",
-  "version": "2.0.0",
-  "author": "Mohammad Rezwan Khan",
-  "lessons": [
+  "$schema": "./lesson-config.schema.json",
+  "schema_version": "1.0",
+  "repository": {
+    "owner": "mohammadrezwankhan",
+    "slug": "mohammadrezwankhan",
+    "name": "mohammadrezwankhan",
+    "title": "Energy Engineering Evidence Atlas",
+    "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan",
+    "default_branch": "main",
+    "description": "Navigate battery, BESS & smart-grid projects through engineering questions, inspectable source code and explicit limits.",
+    "summary": "The profile connects research, open implementations, validation vocabulary, and upstream contributions. A small synthetic battery exercise introduces the evidence questions used to choose a project.",
+    "audience": "Researchers, students, collaborators, and engineers finding a relevant model or evidence workflow.",
+    "topics": [
+      "engineering-portfolio",
+      "electrical-engineering",
+      "battery-energy-storage",
+      "battery-rd",
+      "bess",
+      "smart-grid",
+      "matlab",
+      "simulink",
+      "python",
+      "power-electronics",
+      "renewable-energy",
+      "energy-storage",
+      "reproducible-research",
+      "engineering-education",
+      "github-profile"
+    ],
+    "source_paths": [
+      "README.md",
+      "CONTRIBUTING.md",
+      "LICENSE"
+    ],
+    "is_fork": false,
+    "upstream": null
+  },
+  "domain": {
+    "id": "A",
+    "name": "Energy systems",
+    "primary": "#00E5FF",
+    "secondary": "#00E676",
+    "surface": "#0A192F",
+    "glow": "rgba(0,229,255,0.35)"
+  },
+  "model": {
+    "title": "Evidence atlas · synthetic battery question",
+    "timeUnit": "h",
+    "horizon": 6,
+    "parameters": [
+      {
+        "key": "capacityAh",
+        "label": "Pack capacity",
+        "unit": "Ah",
+        "min": 20,
+        "max": 200,
+        "step": 5,
+        "default": 100,
+        "calibration": "Illustrative input; verified against the declared analytical model, not field measurements."
+      },
+      {
+        "key": "currentA",
+        "label": "Discharge current",
+        "unit": "A",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "default": 12,
+        "calibration": "Illustrative input; verified against the declared analytical model, not field measurements."
+      },
+      {
+        "key": "resistanceOhm",
+        "label": "Internal resistance",
+        "unit": "Ω",
+        "min": 0.005,
+        "max": 0.1,
+        "step": 0.005,
+        "default": 0.035,
+        "calibration": "Illustrative input; verified against the declared analytical model, not field measurements."
+      },
+      {
+        "key": "ambientC",
+        "label": "Ambient temperature",
+        "unit": "°C",
+        "min": 0,
+        "max": 45,
+        "step": 1,
+        "default": 25,
+        "calibration": "Illustrative input; verified against the declared analytical model, not field measurements."
+      },
+      {
+        "key": "initialSoc",
+        "label": "Initial charge",
+        "unit": "%",
+        "min": 30,
+        "max": 100,
+        "step": 5,
+        "default": 90,
+        "calibration": "Illustrative input; verified against the declared analytical model, not field measurements."
+      }
+    ],
+    "metrics": [
+      {
+        "key": "socPct",
+        "label": "State of charge",
+        "unit": "%",
+        "decimals": 1
+      },
+      {
+        "key": "voltageV",
+        "label": "Terminal voltage",
+        "unit": "V",
+        "decimals": 1
+      },
+      {
+        "key": "temperatureC",
+        "label": "Cell temperature",
+        "unit": "°C",
+        "decimals": 1
+      },
+      {
+        "key": "powerKW",
+        "label": "Delivered power",
+        "unit": "kW",
+        "decimals": 2
+      }
+    ],
+    "equation": "SOC = clamp(SOC₀ − 100 I t / Q, 0, 100).\nt_empty = Q SOC₀ / (100 I) for I > 0; t_empty = ∞ when I = 0.\nI_eff = I while SOC > 0, otherwise 0; V = 320 + 0.8 SOC − I_eff R; P = V I_eff / 1000.\nt_heat = min(t, t_empty); t_cool = max(0, t − t_empty).\nT = Tₐ + I²R/8 · (1 − exp(−t_heat/0.8)) · exp(−t_cool/0.8).",
+    "assumptions": [
+      "Illustrative 320–400 V pack with constant requested current until empty.",
+      "Current is zero after depletion; the lumped temperature then cools toward ambient with a 0.8-hour time constant.",
+      "A lumped thermal response and linear open-circuit voltage replace electrochemical dynamics.",
+      "No calibration, cell balancing, aging, or BMS safety logic.",
+      "Pack voltage, capacity, resistance, cooling, and current are invented; they do not describe the author’s hardware, publications, or test data.",
+      "The simple voltage relation omits RC polarization, EKF estimation, cell balancing, and converter dynamics.",
+      "Repository test counts and publication claims remain tied to their cited revisions; they are not inferred from this visual exercise."
+    ],
+    "kind": "battery",
+    "introduction": "The profile is a navigation and evidence document, not a native simulator. This added pack-level ohmic and SOC exercise is a starting question that points learners toward the appropriate source project.",
+    "calibration_status": "Uncalibrated synthetic teaching proxy"
+  },
+  "modules": [
     {
-      "id": "L01",
-      "title": "Portfolio System Architecture & Multi-Domain Taxonomies",
-      "level": "Beginner",
-      "duration": "20 mins",
-      "config_file": "registry/portfolio_matrix.json",
-      "summary": "Explore the unified taxonomy connecting battery chemistry, electrothermal modeling, power converter control, and wholesale energy trading.",
-      "inputs": [
-        "17 public open-source engineering repositories",
-        "PhD doctoral thesis research chapters"
+      "id": "module-1",
+      "title": "Turn a battery question into an evidence route",
+      "objective": "Use units and scope to select a relevant project from the profile.",
+      "minutes": 12,
+      "steps": [
+        "Read the Selected Engineering Work and validation-vocabulary sections.",
+        "Apply 100 Ah capacity, 12 A discharge, 90% initial SOC, and the reference resistance/ambient.",
+        "Predict remaining SOC after six hours, then identify which linked project would address richer electrical dynamics."
       ],
-      "parameters": {
-        "PrimaryDomains": 4,
-        "TotalFlagshipLabs": 12,
-        "InteractiveDashboardCount": 17
+      "preset": {
+        "capacityAh": 100,
+        "currentA": 12,
+        "resistanceOhm": 0.035,
+        "ambientC": 25,
+        "initialSoc": 90
       },
       "checkpoints": [
-        "Verify cross-repository dependency tree",
-        "Understand unified design tokens and 2.5D visual standards"
-      ]
+        {
+          "label": "SOC falls to 18% after six hours",
+          "metric": "socPct",
+          "operator": "==",
+          "expected": 18,
+          "tolerance": 0.02,
+          "atTime": 6
+        },
+        {
+          "label": "Terminal voltage under the declared ohmic relation",
+          "metric": "voltageV",
+          "operator": "==",
+          "expected": 333.98,
+          "tolerance": 0.02,
+          "atTime": 6
+        }
+      ],
+      "reflection": "Which evidence would distinguish this arithmetic check from a measured-cell validation claim?",
+      "source_paths": [
+        "README.md"
+      ],
+      "level": "Foundation"
     },
     {
-      "id": "L02",
-      "title": "Interactive 2.5D Digital Twin Showcase Navigation",
-      "level": "Intermediate",
-      "duration": "35 mins",
-      "config_file": "registry/showcase_telemetry.json",
-      "summary": "Navigate the live interactive 3D perspective dashboard, test real-time physics sliders, and inspect telemetry streams across all models.",
-      "inputs": [
-        "Client browser WebGL/CSS 3D runtime",
-        "Live GitHub Pages hosted endpoints"
+      "id": "module-2",
+      "title": "Find the energy-inventory boundary",
+      "objective": "Recognize that an apparently steady current request cannot continue after depletion.",
+      "minutes": 15,
+      "steps": [
+        "Double discharge current to 24 A with the same 100 Ah capacity and 90% starting SOC.",
+        "Predict depletion at 3.75 hours before running to six hours.",
+        "Use the profile to find the native continuity or energy-limit repository for a richer reserve calculation."
       ],
-      "parameters": {
-        "FPS_Target": 60,
-        "TransitionCurve": "cubic-bezier(0.22, 1, 0.36, 1)"
+      "preset": {
+        "capacityAh": 100,
+        "currentA": 24,
+        "resistanceOhm": 0.035,
+        "ambientC": 25,
+        "initialSoc": 90
       },
       "checkpoints": [
-        "Interact with live 2.5D card tilt mechanisms",
-        "Simulate live scenario parameter overrides"
-      ]
+        {
+          "label": "The modeled pack is empty at six hours",
+          "metric": "socPct",
+          "operator": "==",
+          "expected": 0,
+          "tolerance": 0.02,
+          "atTime": 6
+        },
+        {
+          "label": "Delivered power is zero after depletion",
+          "metric": "powerKW",
+          "operator": "==",
+          "expected": 0,
+          "tolerance": 0.02,
+          "atTime": 6
+        }
+      ],
+      "reflection": "Why is an inventory boundary necessary even in a simple educational battery model?",
+      "source_paths": [
+        "README.md"
+      ],
+      "level": "Parameter study"
     },
     {
-      "id": "L03",
-      "title": "Verified Benchmark Replication Pipeline (MATLAB + Python)",
-      "level": "Advanced",
-      "duration": "50 mins",
-      "config_file": "registry/reproducibility_pipeline.json",
-      "summary": "Execute one-command end-to-end containerized test suites verifying mathematical accuracy across all published battery and grid models.",
-      "inputs": [
-        "Automated CI/CD test harness",
-        "Standard reference datasets (HPPC, WLTP, LMP)"
+      "id": "module-3",
+      "title": "Separate scale from validation",
+      "objective": "Explain how a capacity change affects duration without validating a larger physical pack.",
+      "minutes": 15,
+      "steps": [
+        "Keep current at 24 A and double nominal capacity to 200 Ah.",
+        "Predict six-hour SOC and compare power and heating with the smaller-capacity case.",
+        "Read the profile’s thermal, BESS, and grid-service project descriptions to locate the next required evidence."
       ],
-      "parameters": {
-        "ToleranceThreshold": 0.0001,
-        "DockerSupported": true
+      "preset": {
+        "capacityAh": 200,
+        "currentA": 24,
+        "resistanceOhm": 0.035,
+        "ambientC": 25,
+        "initialSoc": 90
       },
       "checkpoints": [
-        "Reproduce all paper figures and tabular benchmarks",
-        "Verify 100% CI pass rate across all active branches"
-      ]
+        {
+          "label": "Larger capacity restores 18% SOC at six hours",
+          "metric": "socPct",
+          "operator": "==",
+          "expected": 18,
+          "tolerance": 0.02,
+          "atTime": 6
+        },
+        {
+          "label": "Power reflects the higher current",
+          "metric": "powerKW",
+          "operator": "==",
+          "expected": 8.00544,
+          "tolerance": 0.02,
+          "atTime": 6
+        }
+      ],
+      "reflection": "Which geometry, resistance, cooling, protection, and cell-matching assumptions would need reconsideration when scaling a real pack?",
+      "source_paths": [
+        "README.md"
+      ],
+      "level": "Stress test"
     },
     {
-      "id": "L04",
-      "title": "Industrial Collaboration, Citations & Open-Source Roadmap",
-      "level": "Production",
-      "duration": "60 mins",
-      "config_file": "registry/collaboration_manifest.json",
-      "summary": "Guidelines for enterprise adoption, academic citation (BibTeX/CFF), contributing PRs, and engaging in battery/BESS R&D consulting.",
-      "inputs": [
-        "Commercial BESS project specifications",
-        "Academic research inquiries"
+      "id": "module-4",
+      "title": "Create an evidence-led project brief",
+      "objective": "Write a reproducible study question with a clear evidence tier and source of record.",
+      "minutes": 18,
+      "steps": [
+        "Use 100 Ah, 8 A, 70% initial SOC, 0.025 ohm resistance, and 25°C ambient.",
+        "Run and export the synthetic scenario with its parameters and limits.",
+        "Choose a linked native project and record the source revision, setup path, governing assumption, verification plan, and missing measurement evidence."
       ],
-      "parameters": {
-        "License": "MIT",
-        "AdoptionSupport": "Available"
+      "preset": {
+        "capacityAh": 100,
+        "currentA": 8,
+        "resistanceOhm": 0.025,
+        "ambientC": 25,
+        "initialSoc": 70
       },
       "checkpoints": [
-        "Generate official BibTeX citation key",
-        "Access sponsorship and enterprise support channels"
-      ]
+        {
+          "label": "Six-hour SOC is 22%",
+          "metric": "socPct",
+          "operator": "==",
+          "expected": 22,
+          "tolerance": 0.02,
+          "atTime": 6
+        },
+        {
+          "label": "Synthetic delivered power at six hours",
+          "metric": "powerKW",
+          "operator": "==",
+          "expected": 2.6992,
+          "tolerance": 0.02,
+          "atTime": 6
+        }
+      ],
+      "reflection": "How would you label a result that is unit-tested and reproducible but not independently replicated or physically validated?",
+      "source_paths": [
+        "README.md",
+        "CONTRIBUTING.md"
+      ],
+      "level": "Transfer to source"
     }
-  ]
+  ],
+  "source": {
+    "commit": "dae072b3e4cba859fb3200f4104504744d62488d",
+    "audited_at": "2026-10-19T08:39:24Z",
+    "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/tree/dae072b3e4cba859fb3200f4104504744d62488d",
+    "calibration_status": "synthetic-analytical-fixtures",
+    "scope": "This browser lab is a standalone teaching approximation. Use the linked source for the project implementation."
+  },
+  "dashboard_url": "https://mohammadrezwankhan.github.io/mohammadrezwankhan/"
 }

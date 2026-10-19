@@ -37,6 +37,7 @@ jobs:
             --verbose
             --no-progress
             --exclude '^https://fr\.linkedin\.com/.*'
+            --exclude '^https://www\.linkedin\.com/in/mohammadrezwankhan/?$'
             README.md
           fail: true
 

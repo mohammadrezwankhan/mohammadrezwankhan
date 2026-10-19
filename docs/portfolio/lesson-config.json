@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "repository": "mohammadrezwankhan/mohammadrezwankhan",
+  "display_name": "Engineering Research & Practice",
+  "description": "Battery, BESS and smart-grid engineering work with source evidence, research context and upstream contributions.",
+  "domain": "DOMAIN_A",
+  "theme": {
+    "accent": "#00E5FF",
+    "secondary": "#00E676",
+    "surface": "#0A192F",
+    "glow": "rgba(0, 229, 255, 0.35)",
+    "label": "Energy systems",
+    "short": "Energy"
+  },
+  "repo_type": "profile",
+  "source_revision": "dae072b3e4cba859fb3200f4104504744d62488d",
+  "source_snapshot_date": "2026-10-19",
+  "repo_url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan",
+  "homepage": "https://mrkhan.co.technology/",
+  "upstream": null,
+  "lessons": [
+    {
+      "id": "path-01",
+      "title": "Find the engineering focus",
+      "summary": "Read the introduction and the research-to-implementation table.",
+      "objective": "Identify the stated battery, BESS and smart-grid focus and choose the relevant portfolio path.",
+      "checkpoint": "Use the existing portfolio/research links; do not add an installation step to a profile.",
+      "level": "Foundation",
+      "tags": [
+        "foundations",
+        "portfolio",
+        "battery",
+        "grid-control"
+      ],
+      "source_paths": [
+        "README.md",
+        "assets/engineering-hero-v2.webp"
+      ],
+      "source_urls": [
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/README.md",
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/assets/engineering-hero-v2.webp"
+      ],
+      "parameters": [],
+      "command": null,
+      "native_id": null,
+      "native_route": null,
+      "execution_status": "source-linked guide; no execution by this dashboard"
+    },
+    {
+      "id": "path-02",
+      "title": "Choose a project by its question",
+      "summary": "Navigate the Selected Engineering Work table and Energy Evidence Atlas entry.",
+      "objective": "Match a question to the appropriate repository and its documented boundaries.",
+      "checkpoint": "Open the project source that answers the question; distinguish hosted preview capabilities from local application requirements.",
+      "level": "Foundation",
+      "tags": [
+        "foundations",
+        "portfolio",
+        "uncertainty"
+      ],
+      "source_paths": [
+        "README.md",
+        "assets/energy-evidence-atlas.webp"
+      ],
+      "source_urls": [
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/README.md",
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/assets/energy-evidence-atlas.webp"
+      ],
+      "parameters": [],
+      "command": null,
+      "native_id": null,
+      "native_route": null,
+      "execution_status": "source-linked guide; no execution by this dashboard"
+    },
+    {
+      "id": "path-03",
+      "title": "Interpret maturity and source evidence",
+      "summary": "Read the validation vocabulary and dated source records.",
+      "objective": "Separate unit/regression checks, synthetic holdouts and stronger measured/field validation.",
+      "checkpoint": "Each test count or maturity claim should retain its source date and commit; do not aggregate unrelated suites into one live total.",
+      "level": "Applied",
+      "tags": [
+        "application",
+        "portfolio",
+        "data-provenance",
+        "validation"
+      ],
+      "source_paths": [
+        "README.md"
+      ],
+      "source_urls": [
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/README.md"
+      ],
+      "parameters": [],
+      "command": null,
+      "native_id": null,
+      "native_route": null,
+      "execution_status": "source-linked guide; no execution by this dashboard"
+    },
+    {
+      "id": "path-04",
+      "title": "Review collaboration and contribution routes",
+      "summary": "Read selected upstream contributions, open priorities and the profile contribution checklist.",
+      "objective": "Choose a substantive contribution or a focused profile correction.",
+      "checkpoint": "Preserve upstream ownership and verify linked PR status before changing a Merged or Under review label.",
+      "level": "Applied",
+      "tags": [
+        "application",
+        "portfolio",
+        "contribution"
+      ],
+      "source_paths": [
+        "README.md",
+        "CONTRIBUTING.md",
+        ".github/ISSUE_TEMPLATE/profile-improvement.md"
+      ],
+      "source_urls": [
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/README.md",
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/CONTRIBUTING.md",
+        "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/dae072b3e4cba859fb3200f4104504744d62488d/.github/ISSUE_TEMPLATE/profile-improvement.md"
+      ],
+      "parameters": [],
+      "command": null,
+      "native_id": null,
+      "native_route": null,
+      "execution_status": "source-linked guide; no execution by this dashboard"
+    }
+  ]
+}

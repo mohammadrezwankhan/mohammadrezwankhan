@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "name": "mohammadrezwankhan",
+    "name_with_owner": "mohammadrezwankhan/mohammadrezwankhan",
+    "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan"
+  },
+  "native_source": {
+    "commit": "33c036c6da99740b073e44c3c5cdb348e4c29711",
+    "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/tree/33c036c6da99740b073e44c3c5cdb348e4c29711",
+    "source_path_override": "mohammadrezwankhan-clean"
+  },
+  "browser_lab_package_provenance": {
+    "commit": "dae072b3e4cba859fb3200f4104504744d62488d",
+    "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/tree/dae072b3e4cba859fb3200f4104504744d62488d",
+    "scope": "This browser lab is a standalone teaching approximation. Use the linked source for the project implementation.",
+    "calibration_status": "synthetic-analytical-fixtures",
+    "config_path": "docs/lesson-config.json"
+  },
+  "native_catalog_source": "Tracked Markdown in source lesson, example, study-case, concept, model, and documentation paths.",
+  "native_material_count": 1,
+  "reproduction_command_count": 0,
+  "materials": [
+    {
+      "id": "doc-8ec9a00bfd09",
+      "title": "Research → Implementation",
+      "path": "README.md",
+      "line": 36,
+      "source_paths": [
+        "README.md"
+      ],
+      "source_url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/33c036c6da99740b073e44c3c5cdb348e4c29711/README.md#L36",
+      "source_revision": "33c036c6da99740b073e44c3c5cdb348e4c29711",
+      "source_kind": "audited-baseline-readme",
+      "source_label": "Audited README/source guide at 33c036c6da99",
+      "catalog_url": null,
+      "native_url": null,
+      "excerpt": "Portfolio ·",
+      "type": "Native overview",
+      "section": "question",
+      "tags": [
+        "native-reading"
+      ],
+      "track": null,
+      "lesson_id": null,
+      "source_blob_path": "README.md",
+      "source_blob_sha256": "3b027a6a4a3755958f62980e40e45928e169c85bc479def2189e8df2da7fe7cd",
+      "source_blob_retrieval": "git-show",
+      "source_blob_cache": null
+    }
+  ],
+  "commands": [],
+  "engineering_curriculum_exclusions": [],
+  "visuals": {
+    "mapped_diagrams": [],
+    "section_banners": [
+      "section-01-question.svg",
+      "section-02-equations.svg",
+      "section-03-reproduce.svg",
+      "section-04-verification.svg",
+      "section-05-scope.svg"
+    ]
+  },
+  "native_document_banner_insertions": [],
+  "native_document_banner_audit": {
+    "schema_version": 1,
+    "eligibility_rule": "Tracked indexed Markdown in an examples, tutorials, lessons, studies, study-cases, concepts or notes directory, or whose path/title explicitly names a lesson, tutorial, example, walkthrough, study case or study. Banners are based only on existing semantic heading text, never directory names.",
+    "eligible_document_count": 0,
+    "lesson_document_candidates": 0,
+    "modified_document_count": 0,
+    "banner_insertion_count": 0,
+    "audit_gap_count": 0,
+    "banners": [],
+    "audit_gaps": [],
+    "explicit_exclusions": []
+  },
+  "dashboard": {
+    "browser_lab_is_surrogate": true,
+    "native_execution_in_browser": false,
+    "localStorage_or_existing_dashboard_scripts_preserved": true
+  }
+}
