@@ -1,3 +1,50 @@
+![Energy Engineering Evidence Atlas: original vector system illustration](assets/hero-25d.svg)
+
+The profile connects research, open implementations, validation vocabulary, and upstream contributions. A small synthetic battery exercise introduces the evidence questions used to choose a project.
+
+**[Native-source lesson guide](docs/portfolio/) · [Offline interactive lab](docs/index.html) · [Lesson configuration](docs/lesson-config.json) · [Configuration schema](docs/lesson-config.schema.json) · [Portfolio at rezwankhan.tech](https://rezwankhan.tech)**
+
+## Your first interactive result
+
+1. Download or clone this repository and open `docs/index.html` in a modern browser.
+2. Select **Module 1**, apply its preset, and compare the declared checkpoint with the plotted result.
+3. Change one slider, inspect the model assumptions, then export the configuration or telemetry for your notes.
+
+The browser lab runs offline with no packages, accounts, or live data feeds. Its numbers are deterministic teaching simulations. Each checkpoint states its model time and tolerance; passing it demonstrates agreement with that model, not field calibration or production readiness.
+
+## Four-module learning path
+
+| Module | Investigation | Approximate time |
+|---|---|---:|
+| 1. Turn a battery question into an evidence route | Use units and scope to select a relevant project from the profile. | 12 min |
+| 2. Find the energy-inventory boundary | Recognize that an apparently steady current request cannot continue after depletion. | 15 min |
+| 3. Separate scale from validation | Explain how a capacity change affects duration without validating a larger physical pack. | 15 min |
+| 4. Create an evidence-led project brief | Write a reproducible study question with a clear evidence tier and source of record. | 18 min |
+
+**Who this is for:** Researchers, students, collaborators, and engineers finding a relevant model or evidence workflow.
+
+### Continue into the implementation
+
+- [README.md](README.md)
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [LICENSE](LICENSE)
+
+### Explore or run the source
+
+No native runtime: this is a profile and evidence directory. Follow each linked repository’s own setup instructions.
+
+```bash
+git show HEAD:README.md
+git show HEAD:CONTRIBUTING.md
+```
+
+These commands come from the audited source revision. Runtime requirements and the project's own validation limits are documented below; the standalone browser lab does not execute these commands.
+
+The detailed project guide below remains the source for installation, supported features, licences, and scientific limits. The browser equations and laboratory settings do not change the original application or numerical engine.
+
+<details>
+<summary>Project documentation, installation, attribution, and existing validation</summary>
+
 <!-- markdownlint-disable MD013 MD033 MD041 MD060 -->
 
 <div align="center">
@@ -132,8 +179,9 @@ or a focused [open issue](https://github.com/mohammadrezwankhan/matlab-simulink-
 
 </div>
 
-
 ## Energy Evidence Atlas
+
+[![Conceptual cell-to-grid assembly linking battery cells, modules, BESS assurance, power conversion and the electrical load](assets/energy-evidence-atlas.webp)](https://mrkhan.co.technology/energy-evidence-atlas/)
 
 **Follow an engineering question from the physical system to its source evidence.**
 
@@ -157,7 +205,6 @@ Explore the [self-paced learning workspace](https://mrkhan.co.technology/energy-
 - **Dispatch & markets:** [VoltRL](https://github.com/mohammadrezwankhan/voltrl), [HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab), and [ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade).
 
 Progress is self-paced and stored locally in your browser. This workspace offers no certification; synthetic examples are for exploration and do not constitute field validation.
-
 
 ## Public browser demo collection
 
@@ -185,21 +232,6 @@ New MKLab additions include [Shomonnoy](https://mklab.co.technology/apps/shomonn
 
 Source and CI records reviewed 7 October 2026. Counts refer to individual jobs at linked commits, not totals across matrix jobs. [Current portfolio catalogue](https://mrkhan.co.technology/models/#browser-labs).
 
-
-
-
-## Interactive 2.5D Architecture & Systems Showcase
-
-Explore the unified 2.5D visual architecture and live interactive laboratories across battery physics, digital twins, and energy systems:
-
-<div align="center">
-  <img src="assets/hero-25d.svg" alt="Mohammad Rezwan Khan 2.5D Systems Architecture" width="100%">
-</div>
-
-- **Battery & Thermal Management:** [MATLAB Simulink Energy Lab](https://mohammadrezwankhan.github.io/matlab-simulink-energy-lab/) · [ThermoWeave Battery Digital Twin](https://mohammadrezwankhan.github.io/thermoweave-battery-digital-twin/) · [Battery Cycle-Life Analyzer](https://mohammadrezwankhan.github.io/battery-cycle-life-analyzer/)
-- **Assurance & Continuity:** [Datacenter Twin Lab](https://mohammadrezwankhan.github.io/datacenter-twin-lab/) · [BESS QA/QC Toolkit](https://mohammadrezwankhan.github.io/bess-qaqc-toolkit/) · [Smart Grid Storage Playbook](https://mohammadrezwankhan.github.io/smart-grid-storage-playbook/)
-- **Market Dispatch & Simulation:** [VoltRL Arbitrage](https://mohammadrezwankhan.github.io/voltrl/) · [ZephyrTrade Wind Power](https://mohammadrezwankhan.github.io/zephyrtrade/) · [HelioForge Hybrid Lab](https://mohammadrezwankhan.github.io/helioforge-energy-lab/)
-
 ## Complete public repository directory
 
 Snapshot checked **18 October 2026**: **17 owned public repositories — 12 non-forks (including this profile), 5 forks**. These counts exclude private and collaborator-owned repositories and are separate from the 69 MKLab demos. [Browse the live GitHub repository list](https://github.com/mohammadrezwankhan?tab=repositories) or the [portfolio directory and dated source records](https://mrkhan.co.technology/models/#repository-directory). Workflow results apply to their linked commits; they are not independent validation.
@@ -223,3 +255,5 @@ Snapshot checked **18 October 2026**: **17 owned public repositories — 12 non-
 | [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
 | [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
 | [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
+
+</details>
