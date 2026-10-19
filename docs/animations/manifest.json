@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "repository": "mohammadrezwankhan",
+  "preserved_current_commit": "6478de6d45cb2bf56c92ddba915163771ffed14a",
+  "animations": [
+    {
+      "kind": "image",
+      "title": "Original floating-layer SVG",
+      "badge": "Earlier animated media",
+      "description": "Floating isometric tiers, pulsing circuits, and flowing dashed traces from the earlier repository hero.",
+      "format": "Animated SVG",
+      "preview": "media/hero-25d-5c1824802c3a.svg",
+      "preview_sha256": "9a959d3d8ec8d1c4dd071fa368bf82a4f728037e2d29f0271b88f812da6d0d51",
+      "motion_identity": "5c1824802c3a9b2e55621f86b992e85590573aa9523af8f0f2c2770e9d92e8ce",
+      "sources": [
+        {
+          "path": "assets/hero-25d.svg",
+          "commit": "c055036293e200c8bc0302a0e91c89221970f4e3",
+          "sha256": "569dbcac50a4b228c1ca5dc03bb36ca01b65410264b95d9a876ec411487aaaa1",
+          "blob": "ac8f5f9c148ca76a3d024ae15b87d548993c69bf",
+          "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/c055036293e200c8bc0302a0e91c89221970f4e3/assets/hero-25d.svg"
+        },
+        {
+          "path": "assets/hero-25d.svg",
+          "commit": "ec6d868f76a6d6ee2d2a27beeb05950af8c6eba1",
+          "sha256": "ea148e8c904cc4a0e3631ee5f5b4a798e043b7c683f5ff42b31c145932840c1d",
+          "blob": "aa2600846bab134a0437a57a668a23334cdee870",
+          "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/ec6d868f76a6d6ee2d2a27beeb05950af8c6eba1/assets/hero-25d.svg"
+        }
+      ]
+    },
+    {
+      "kind": "image",
+      "title": "Engineering in motion",
+      "badge": "Earlier animated media",
+      "description": "The original looping profile film: battery physics, executable models, review evidence, and energy systems. Illustrative; no live data.",
+      "format": "Animated GIF",
+      "preview": "media/engineering-hero-0860c7273856.gif",
+      "preview_sha256": "0860c72738569bbca8fa91d702518157a9e80ef08024b566bcdf219af4446690",
+      "motion_identity": "0860c72738569bbca8fa91d702518157a9e80ef08024b566bcdf219af4446690",
+      "sources": [
+        {
+          "path": "assets/engineering-hero.gif",
+          "commit": "539b4a4775c66d64ae4f08f44566c42b41531284",
+          "sha256": "0860c72738569bbca8fa91d702518157a9e80ef08024b566bcdf219af4446690",
+          "blob": "93d99aeb87f138c01354035e8e34bd08071523d6",
+          "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/539b4a4775c66d64ae4f08f44566c42b41531284/assets/engineering-hero.gif"
+        }
+      ]
+    },
+    {
+      "kind": "waveform",
+      "title": "Original interactive waveform",
+      "badge": "Previous dashboard animation",
+      "description": "The earlier 2.5D perspective card and its moving waveform, with the original visual formulas and sliders.",
+      "preview": "waveform.html",
+      "preview_sha256": "71840e056849183bcdb30793d16a112021cb858c53b68b0e9534dd2b48fb5b6a",
+      "sources": [
+        {
+          "path": "docs/index.html",
+          "commit": "c055036293e200c8bc0302a0e91c89221970f4e3",
+          "blob": "c1b87d065381c8571c44dd2653bd5b57db43a648",
+          "sha256": "fc8b3032837b3e246fa08717b680e8d90e9e2dc8f0ee4293df9e5d9cc054c1fc",
+          "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/c055036293e200c8bc0302a0e91c89221970f4e3/docs/index.html"
+        },
+        {
+          "path": "docs/index.html",
+          "commit": "ec6d868f76a6d6ee2d2a27beeb05950af8c6eba1",
+          "blob": "d2028d656180d0d58fd0fb6a47c2b1042c2b90cf",
+          "sha256": "090540381beb99fcfe91892d3b95ce0752cfd5093992f2bcf0957811c57f65f1",
+          "url": "https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/ec6d868f76a6d6ee2d2a27beeb05950af8c6eba1/docs/index.html"
+        }
+      ]
+    }
+  ],
+  "native_links": [
+    {
+      "title": "Original interactive engineering scene",
+      "url": "https://mrkhan.co.technology/assets/engineering-hero/v1/index.html",
+      "description": "The preserved opt-in 3D scene: battery physics, models, evidence, and grid systems. Requires WebGL; the film remains available when WebGL is unavailable."
+    }
+  ],
+  "historical_source_links": []
+}
