@@ -10,6 +10,17 @@ The profile connects research, open implementations, validation vocabulary, and 
 
 Earlier animated artwork, waveform demos, and original interactive experiences are linked alongside the current animations.
 
+## Choose a project by the engineering question
+
+| Question | Start with the native example |
+|---|---|
+| How does a late-cycle holdout change a battery-life fit? | [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/blob/main/README.md) |
+| How long can a finite battery reserve supply an outage? | [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab/blob/main/README.md) |
+| How do current pulses affect terminal voltage and SOC? | [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/README.md) |
+| Which evidence is missing before a fictional BESS handover? | [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit/blob/main/README.md) |
+
+Each repository states its runtime, synthetic inputs and validation limits. The profile exercise below is a separate teaching aid.
+
 ## Your first interactive result
 
 1. Download or clone this repository and open `docs/index.html` in a modern browser.
@@ -104,7 +115,7 @@ equations, assumptions, tests, and engineering limits.
 
 | Project | Engineering question | Evidence you can inspect |
 |---|---|---|
-| **[MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** | How do battery, converter, and BESS-control models behave under explicit checks? | Historical [2026-10-06 README snapshot](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/5cc54c8c453da6f6e54b514fa83bcfe7a01e48e1/README.md#start-in-60-seconds): 20 Base MATLAB checks, 25 general checks plus one unified-BESS entry point (26 total), and a 31-result focused BESS suite. Latest release [v0.11.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.11.0) cites validation at exact source [`c23d7ff`](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/tree/c23d7ffd137ee614ea3fdaf4ac4e257a3a1edafe); neither source is a current-`main` validation claim. |
+| **[MATLAB Simulink Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab)** | How do battery, converter, and BESS-control models behave under explicit checks? | Historical [2026-10-06 README snapshot](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/5cc54c8c453da6f6e54b514fa83bcfe7a01e48e1/README.md#start-in-60-seconds): 20 Base MATLAB checks, 25 general checks plus one unified-BESS entry point (26 total), and a 31-result focused BESS suite. Earlier release [v0.11.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.11.0) cites validation at exact source [`c23d7ff`](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/tree/c23d7ffd137ee614ea3fdaf4ac4e257a3a1edafe); neither source is a current-`main` validation claim. |
 | **[VoltRL](https://github.com/mohammadrezwankhan/voltrl)** | How should battery arbitrage be benchmarked without information leakage? | Synthetic and historical protocols; regenerated experiments; pinned dependencies; provenance and checksum audits. |
 | **[HelioForge Energy Lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab)** | How do hybrid-energy assumptions translate into a bounded dispatch and storage calculation? | [Standalone browser preview](https://mkgrid.co.technology/); local Python API; scenario and energy-balance tests; browser/API checks; explicit synthetic-data and screening limits. |
 | **[ZephyrTrade](https://github.com/mohammadrezwankhan/zephyrtrade)** | How do wind-forecast and direct-offer strategies change hypothetical revenue? | [Standalone browser preview](https://mktrade.co.business/); reproducible synthetic fixtures; Python/browser numerical parity; Linux CI; no live prices or order execution. |
@@ -222,7 +233,7 @@ The new source repositories remain private; the public website provides syntheti
 
 - **[MKLab](https://mklab.co.technology/)**: Explore 69 public browser demos for energy, learning, civic information and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
 - **[Intelligent UI](https://mrkhan.co.technology/#intelligent-ui)**: Local, no API; deterministic approved-source routing, no connected AI, and not an engineering approval.
-- **[HelioForge Energy Lab](https://mkgrid.co.technology/)**: Explore hybrid-energy architectures, linked lessons and bundled scenario results. The hosted preview shows bundled examples. New numerical runs require the separate local Python application; no calibrated plant control.
+- **[HelioForge Energy Lab](https://mkgrid.co.technology/)**: Explore hybrid-energy architectures, linked lessons and bundled scenario results. The current source includes a bounded 24-hour browser energy-balance Terminal; advanced studies require the local Python application. Check the published build before assuming a hosted capability. Synthetic screening only; no calibrated plant control.
 - **[ZephyrTrade](https://mktrade.co.business/)**: Compare wind-market strategies and calculate hypothetical offers from synthetic observations. Synthetic historical data, not live prices, order execution or investment recommendations.
 - **[Datacenter Twin Lab](https://khanlab.co.technology/)**: Learn electrical continuity through 24 lessons, including 12 continuity and 12 infrastructure lessons, with 18 synthetic scenarios and inspectable energy ledgers. Uncalibrated synthetic electrical model; not facility safety, certified uptime or live equipment control.
 
@@ -238,28 +249,23 @@ New MKLab additions include [Shomonnoy](https://mklab.co.technology/apps/shomonn
 
 Source and CI records reviewed 7 October 2026. Counts refer to individual jobs at linked commits, not totals across matrix jobs. [Current portfolio catalogue](https://mrkhan.co.technology/models/#browser-labs).
 
-## Complete public repository directory
+## Public original repository directory
 
-Snapshot checked **18 October 2026**: **17 owned public repositories — 12 non-forks (including this profile), 5 forks**. These counts exclude private and collaborator-owned repositories and are separate from the 69 MKLab demos. [Browse the live GitHub repository list](https://github.com/mohammadrezwankhan?tab=repositories) or the [portfolio directory and dated source records](https://mrkhan.co.technology/models/#repository-directory). Workflow results apply to their linked commits; they are not independent validation.
+Snapshot checked **30 October 2026**: **12 owned public originals**, including this profile. This active directory excludes forks and private repositories. It is separate from the browser-demo catalogue and historical upstream contributions above. [Browse the live repository list](https://github.com/mohammadrezwankhan?tab=repositories). Source and workflow evidence apply to their linked revisions.
 
-| Repository | Type | Stable release at review |
+| Original repository | Engineering question | Start here |
 |---|---|---|
-| [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer) | Non-fork | [v0.2.0](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/releases/tag/v0.2.0) |
-| [battery-power-models](https://github.com/mohammadrezwankhan/battery-power-models) | Non-fork | No stable release listed |
-| [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | Non-fork | No stable release listed |
-| [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Non-fork | No stable release listed |
-| [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab) | Non-fork | [v2.0.0](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.0) |
-| [helioforge-energy-lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab) | Non-fork | No stable release listed |
-| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | Non-fork | [v0.11.0](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/releases/tag/v0.11.0) |
-| [mohammadrezwankhan](https://github.com/mohammadrezwankhan/mohammadrezwankhan) | Non-fork | No stable release listed |
-| [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Non-fork | No stable release listed |
-| [thermoweave-battery-digital-twin](https://github.com/mohammadrezwankhan/thermoweave-battery-digital-twin) | Non-fork | No stable release listed |
-| [voltrl](https://github.com/mohammadrezwankhan/voltrl) | Non-fork | [v1.1.0](https://github.com/mohammadrezwankhan/voltrl/releases/tag/v1.1.0) |
-| [zephyrtrade](https://github.com/mohammadrezwankhan/zephyrtrade) | Non-fork | No stable release listed |
-| [advisory-database](https://github.com/mohammadrezwankhan/advisory-database) | Fork | No stable release listed |
-| [awesome-battery-data](https://github.com/mohammadrezwankhan/awesome-battery-data) | Fork | No stable release listed |
-| [awesome-MATLAB](https://github.com/mohammadrezwankhan/awesome-MATLAB) | Fork | No stable release listed |
-| [awesome-power-analysis](https://github.com/mohammadrezwankhan/awesome-power-analysis) | Fork | No stable release listed |
-| [emhass](https://github.com/mohammadrezwankhan/emhass) | Fork | No stable release listed |
+| [battery-cycle-life-analyzer](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer) | How does chronological holdout affect model selection? | [README and setup](https://github.com/mohammadrezwankhan/battery-cycle-life-analyzer/blob/main/README.md) |
+| [battery-power-models](https://github.com/mohammadrezwankhan/battery-power-models) | How do simple electrical and thermal reference calculations behave? | [README and setup](https://github.com/mohammadrezwankhan/battery-power-models/blob/main/README.md) |
+| [battery-thermal-modeling-notes](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes) | How do heat balance and integration assumptions affect one-node temperature? | [README and setup](https://github.com/mohammadrezwankhan/battery-thermal-modeling-notes/blob/main/README.md) |
+| [bess-qaqc-toolkit](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit) | Which fictional review records lack required evidence? | [README and setup](https://github.com/mohammadrezwankhan/bess-qaqc-toolkit/blob/main/README.md) |
+| [datacenter-twin-lab](https://github.com/mohammadrezwankhan/datacenter-twin-lab) | When does a finite reserve run out during an outage? | [README and setup](https://github.com/mohammadrezwankhan/datacenter-twin-lab/blob/main/README.md) |
+| [helioforge-energy-lab](https://github.com/mohammadrezwankhan/helioforge-energy-lab) | How do hybrid-energy assumptions change a bounded energy balance? | [README and setup](https://github.com/mohammadrezwankhan/helioforge-energy-lab/blob/main/README.md) |
+| [matlab-simulink-energy-lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) | How do battery, thermal, converter and BESS teaching models behave? | [README and setup](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab/blob/main/README.md) |
+| [mohammadrezwankhan](https://github.com/mohammadrezwankhan/mohammadrezwankhan) | Which original project addresses the engineering question? | [README and setup](https://github.com/mohammadrezwankhan/mohammadrezwankhan/blob/main/README.md) |
+| [smart-grid-storage-playbook](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook) | Which power, energy or reserve constraint makes a request infeasible? | [README and setup](https://github.com/mohammadrezwankhan/smart-grid-storage-playbook/blob/main/README.md) |
+| [thermoweave-battery-digital-twin](https://github.com/mohammadrezwankhan/thermoweave-battery-digital-twin) | How do spatial cooling boundaries change a synthetic thermal graph? | [README and setup](https://github.com/mohammadrezwankhan/thermoweave-battery-digital-twin/blob/main/README.md) |
+| [voltrl](https://github.com/mohammadrezwankhan/voltrl) | How do causal information and fair baselines affect battery-arbitrage research? | [README and setup](https://github.com/mohammadrezwankhan/voltrl/blob/main/README.md) |
+| [zephyrtrade](https://github.com/mohammadrezwankhan/zephyrtrade) | How do forecast and decision assumptions affect synthetic settlement costs? | [README and setup](https://github.com/mohammadrezwankhan/zephyrtrade/blob/main/README.md) |
 
 </details>
