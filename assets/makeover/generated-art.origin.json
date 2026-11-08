@@ -1,0 +1,52 @@
+{
+  "title": "Pixel-core signal field",
+  "role": "Supplemental original AI artwork for the GitHub makeover gallery; the lightweight code-native SVG and GIF assets remain the primary identity assets.",
+  "generated_at_date": "2026-11-08",
+  "generator": "OpenAI image_gen.imagegen",
+  "deterministic": false,
+  "prompt": "Create an original high-craft wide editorial artwork for an electrical engineering research portfolio. Use the attached small pixel-art energy core as the identity reference: preserve the central angular cream/yellow and amber energy core, coral boundary, and dark violet surrounding arcs in recognisable form. Treat it as a meticulously engineered luminous mosaic object, not a mascot. A deep near-black aubergine field (#100b18), one monumental precision-cut geometric energy core on the right half, restrained violet orbital tracks and amber square signal markers flowing toward it from the left. Strong spatial composition with generous calm negative space on the left for future typography. Art direction: sophisticated minimal retro-futurist engineering publication, beautifully controlled pixel geometry with crisp edges, tactile finely printed materials, high contrast amber/cream/violet palette, no haze, no gradients or excessive glow. Widescreen 2:1 landscape, usable as 1280x640 supplemental poster art. No text, no letters, no logos, no Octocat, no GitHub trademark shapes, no photographs, no people, no fabricated charts or numerical indicators. Flat, sharp, disciplined composition with a recognisable pixel-core silhouette.",
+  "reference": {
+    "filename": "current-avatar.png",
+    "sha256": "821fe2d9acf3e6a6c2aff1f60ba3da6fc7aaf958609d7e98524035d29c15aefe",
+    "use": "User-provided existing avatar used as identity reference"
+  },
+  "source": {
+    "filename": "exec-c65bb4b9-20a8-4760-864d-f37898e213b6.png",
+    "width": 1774,
+    "height": 887,
+    "bytes": 1210644,
+    "sha256": "8d73ed15b9463888801cc97434b5bf1da8ab130be75e5766617658bfa5b66edc"
+  },
+  "transformations": {
+    "width": 1280,
+    "height": 640,
+    "fit": "fill",
+    "webp": {
+      "quality": 88,
+      "effort": 6
+    },
+    "png": {
+      "compressionLevel": 9,
+      "palette": true,
+      "colours": 256,
+      "effort": 10
+    }
+  },
+  "reproduction": "AI generation is non-deterministic. To reproduce the derived exports from the original generated PNG, use sharp(source).resize(1280,640,{fit:\"fill\"}).webp({quality:88,effort:6}) or .png({compressionLevel:9,palette:true,colours:256,effort:10}).",
+  "outputs": [
+    {
+      "filename": "generated-art.webp",
+      "width": 1280,
+      "height": 640,
+      "bytes": 22048,
+      "sha256": "352ae4470377ed55005a715e4e021948049d0633687125e9e02318f562352184"
+    },
+    {
+      "filename": "generated-art.png",
+      "width": 1280,
+      "height": 640,
+      "bytes": 379420,
+      "sha256": "325c40e2ada339ca06d83073498953a32bf915313faefbc9df04880da84111d4"
+    }
+  ]
+}

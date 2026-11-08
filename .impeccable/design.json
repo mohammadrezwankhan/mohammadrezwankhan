@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T08:07:03Z",
+  "title": "Design System: Rezwan energy-core identity",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Aubergine field"
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Raised tone"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Violet divider"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm cream"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted interface violet"
+      },
+      "amber": {
+        "role": "primary",
+        "displayName": "Energy amber"
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Interface violet"
+      },
+      "yellow": {
+        "role": "primary",
+        "displayName": "Core yellow"
+      },
+      "core-shadow": {
+        "role": "neutral",
+        "displayName": "Core shadow"
+      },
+      "core-violet": {
+        "role": "secondary",
+        "displayName": "Core violet"
+      },
+      "core-coral": {
+        "role": "secondary",
+        "displayName": "Core coral"
+      },
+      "art-violet": {
+        "role": "secondary",
+        "displayName": "Artwork violet"
+      },
+      "art-muted": {
+        "role": "neutral",
+        "displayName": "Artwork annotation"
+      },
+      "art-line": {
+        "role": "neutral",
+        "displayName": "Artwork line"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Gallery display",
+        "purpose": "Intro heading; 38px in the stacked layout."
+      },
+      "headline": {
+        "displayName": "Section heading",
+        "purpose": "Artwork and project section titles."
+      },
+      "body": {
+        "displayName": "Reading text",
+        "purpose": "System typography with paragraphs capped at 68ch."
+      },
+      "label": {
+        "displayName": "Controls and routes",
+        "purpose": "Buttons, project descriptions, and download links."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "signal-orbit",
+        "value": "12s linear infinite",
+        "purpose": "Two small markers orbit while the emblem and lettering stay fixed."
+      },
+      {
+        "name": "gif-loop",
+        "value": "48 frames; 250ms per frame; loop=0",
+        "purpose": "Indefinite fallback playback; the file itself cannot evaluate reduced-motion preferences."
+      },
+      {
+        "name": "gallery-pause",
+        "value": "animation-play-state: paused",
+        "purpose": "Manual pause, hidden document, and offscreen artwork handling are implemented in the gallery controller."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Source-defined response to prefers-reduced-motion: reduce; live behavior awaits publication checks."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stacked-max-width",
+        "value": "700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary portfolio link",
+      "kind": "button",
+      "refersTo": "primary-link",
+      "description": "Gallery primary route into the native GitHub profile; actual default, hover, and keyboard-focus treatments.",
+      "html": "<a class=\"ds-primary\" href=\"https://github.com/mohammadrezwankhan\">Explore my GitHub</a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;border:1px solid var(--amber,#ff9f1c);border-radius:8px;background:var(--amber,#ff9f1c);color:var(--ink,#100b18);font:700 15px/1.6 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;text-decoration:none}.ds-primary:hover{background:var(--yellow,#ffe66d);color:var(--ink,#100b18)}.ds-primary:focus-visible{outline:3px solid var(--amber,#ff9f1c);outline-offset:6px}@media(max-width:700px){.ds-primary{padding:10px 14px}}"
+    },
+    {
+      "name": "Motion toggle",
+      "kind": "button",
+      "refersTo": "motion-toggle",
+      "description": "Visual sample of the real control. The gallery controller owns pause/resume, reduced-motion locking, visibility handling, aria-pressed, and the status message.",
+      "html": "<button class=\"ds-motion\" type=\"button\" aria-pressed=\"false\">Pause motion</button><p class=\"ds-motion-note\" role=\"status\">Seamless loops. No live telemetry.</p>",
+      "css": ".ds-motion{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;border:1px solid var(--line,#50335f);border-radius:8px;background:var(--panel,#1d1327);color:var(--paper,#fff6c8);font:15px/1.6 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer}.ds-motion:hover{background:var(--panel,#1d1327);color:var(--paper,#fff6c8)}.ds-motion:focus-visible{outline:3px solid var(--amber,#ff9f1c);outline-offset:6px}.ds-motion-note{margin:18px 0 0;color:var(--muted,#cbb7d9);font:14px/1.6 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}@media(max-width:700px){.ds-motion{padding:10px 14px}}"
+    },
+    {
+      "name": "Portfolio navigation",
+      "kind": "nav",
+      "refersTo": "gallery-navigation",
+      "description": "Wrapping text navigation; the existing learning lab and earlier animations remain reachable.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Portfolio\"><a href=\"https://mrkhan.co.technology/\">Portfolio</a><a href=\"https://mohammadrezwankhan.github.io/mohammadrezwankhan/\">Learning lab</a><a href=\"https://mohammadrezwankhan.github.io/mohammadrezwankhan/animations/\">Previous animations</a></nav>",
+      "css": ".ds-nav{display:flex;gap:24px;flex-wrap:wrap}.ds-nav a{color:var(--paper,#fff6c8);font:14px/1.6 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;text-decoration:none}.ds-nav a:hover{color:var(--amber,#ff9f1c)}.ds-nav a:focus-visible{outline:3px solid var(--amber,#ff9f1c);outline-offset:6px}@media(max-width:700px){.ds-nav{gap:10px 16px;justify-content:flex-end}}"
+    },
+    {
+      "name": "Repository route",
+      "kind": "custom",
+      "refersTo": "project-row",
+      "description": "A title, bounded engineering purpose, and source link in one ruled row; stacks at the gallery breakpoint.",
+      "html": "<article class=\"ds-project\"><h3>MATLAB Simulink Energy Lab</h3><p>Battery models, power conversion, and BESS control.</p><a href=\"https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab\">Open repository →</a></article>",
+      "css": ".ds-project{display:grid;grid-template-columns:1.25fr 1fr auto;gap:24px;align-items:center;padding:23px 0;border-bottom:1px solid var(--line,#50335f);color:var(--paper,#fff6c8);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}.ds-project h3{margin:0;font-size:20px;line-height:1.3}.ds-project p{margin:0;color:var(--muted,#cbb7d9);font-size:15px;line-height:1.6}.ds-project a{color:var(--paper,#fff6c8);font-size:15px;line-height:1.6;white-space:nowrap;text-decoration-thickness:1px;text-underline-offset:5px}.ds-project a:hover{color:var(--amber,#ff9f1c)}.ds-project a:focus-visible{outline:3px solid var(--amber,#ff9f1c);outline-offset:6px}@media(max-width:700px){.ds-project{grid-template-columns:1fr;gap:10px;padding:22px 0}}"
+    },
+    {
+      "name": "Canonical pixel core",
+      "kind": "custom",
+      "refersTo": "pixel-core",
+      "description": "Exact static SVG asset embedded for this preview. Production animated SVGs add two orbit markers and honor reduced motion; the core itself stays fixed.",
+      "html": "<div class=\"ds-core\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"500\" height=\"500\" viewBox=\"0 0 500 500\" role=\"img\" aria-labelledby=\"ds-core-title ds-core-desc\"><title id=\"ds-core-title\">Rezwan pixel energy core</title><desc id=\"ds-core-desc\">Original amber and cream pixel energy core with violet arcs. Two signal markers orbit every twelve seconds. Reduced motion keeps the complete static emblem.</desc><rect width=\"500\" height=\"500\" fill=\"#100b18\"/><g transform=\"translate(20.0 20.0) scale(9.58)\"><path fill=\"#231331\" d=\"M24 5h1v5h-1zM8 20h5v2h-5zM36 20h5v2h-5zM8 22h1v2h-1zM40 22h1v2h-1zM5 24h4v1h-4zM40 24h4v1h-4zM8 25h1v2h-1zM12 22h1v5h-1zM36 22h1v5h-1zM40 25h1v2h-1zM8 27h5v2h-5zM36 27h5v2h-5zM24 39h1v5h-1z\"/><path fill=\"#5c2a72\" d=\"M24 3h2v2h-2zM21 7h1v1h-1zM27 7h1v1h-1zM18 8h4v1h-4zM27 8h4v1h-4zM7 8h2v2h-2zM15 9h7v1h-7zM27 9h7v1h-7zM40 8h2v2h-2zM14 10h8v1h-8zM27 10h8v1h-8zM13 11h9v1h-9zM27 11h9v1h-9zM13 12h6v1h-6zM30 12h6v1h-6zM12 13h5v1h-5zM32 13h5v1h-5zM11 14h5v1h-5zM33 14h5v1h-5zM10 15h6v1h-6zM33 15h6v1h-6zM10 16h5v2h-5zM34 16h5v2h-5zM10 18h4v2h-4zM35 18h4v2h-4zM13 20h1v1h-1zM35 20h1v1h-1zM3 24h2v2h-2zM44 24h2v2h-2zM13 28h1v1h-1zM35 28h1v1h-1zM10 29h4v2h-4zM35 29h4v2h-4zM10 31h5v2h-5zM34 31h5v2h-5zM10 33h6v1h-6zM33 33h6v1h-6zM11 34h5v1h-5zM33 34h5v1h-5zM12 35h5v1h-5zM32 35h5v1h-5zM13 36h6v1h-6zM30 36h6v1h-6zM13 37h9v1h-9zM27 37h9v1h-9zM14 38h8v1h-8zM27 38h8v1h-8zM15 39h7v1h-7zM27 39h7v1h-7zM7 39h2v2h-2zM18 40h4v1h-4zM27 40h4v1h-4zM40 39h2v2h-2zM21 41h1v1h-1zM27 41h1v1h-1zM24 44h2v2h-2z\"/><path fill=\"#d94a4a\" d=\"M17 4h2v2h-2zM21 13h7v1h-7zM19 14h11v1h-11zM18 15h1v1h-1zM29 15h2v1h-2zM16 16h3v1h-3zM29 16h4v1h-4zM16 17h2v1h-2zM31 17h2v1h-2zM15 18h2v1h-2zM32 18h2v1h-2zM14 19h1v2h-1zM34 19h1v2h-1zM13 21h2v7h-2zM34 21h2v7h-2zM14 28h1v1h-1zM34 28h1v1h-1zM14 29h3v1h-3zM32 29h3v1h-3zM15 30h2v1h-2zM32 30h2v1h-2zM16 31h2v1h-2zM31 31h2v1h-2zM16 32h3v1h-3zM29 32h4v1h-4zM18 33h1v1h-1zM29 33h2v1h-2zM19 34h11v1h-11zM21 35h7v1h-7zM31 44h2v2h-2z\"/><path fill=\"#ff9f1c\" d=\"M5 15h2v2h-2zM18 17h6v1h-6zM25 17h6v1h-6zM17 18h5v1h-5zM27 18h5v1h-5zM17 19h4v1h-4zM28 19h4v1h-4zM17 20h3v1h-3zM24 20h1v1h-1zM29 20h3v1h-3zM17 21h2v1h-2zM23 21h3v1h-3zM30 21h2v1h-2zM22 22h1v1h-1zM26 22h1v1h-1zM17 22h1v2h-1zM21 23h2v1h-2zM26 23h2v1h-2zM31 22h1v2h-1zM20 24h3v1h-3zM26 24h3v1h-3zM21 25h2v1h-2zM26 25h2v1h-2zM9 22h3v5h-3zM17 25h1v2h-1zM22 26h1v1h-1zM26 26h1v1h-1zM31 25h1v2h-1zM37 22h3v5h-3zM17 27h2v1h-2zM23 27h3v1h-3zM30 27h2v1h-2zM17 28h3v1h-3zM24 28h1v1h-1zM29 28h3v1h-3zM17 29h4v1h-4zM28 29h4v1h-4zM17 30h5v1h-5zM27 30h5v1h-5zM18 31h6v1h-6zM25 31h6v1h-6zM39 37h2v2h-2z\"/><path fill=\"#ffe66d\" d=\"M19 15h10v2h-10zM42 15h2v2h-2zM22 18h1v1h-1zM26 18h1v1h-1zM21 19h1v1h-1zM27 19h1v1h-1zM20 20h1v1h-1zM28 20h1v1h-1zM19 21h1v1h-1zM29 21h1v1h-1zM18 22h1v1h-1zM30 22h1v1h-1zM18 26h1v1h-1zM30 26h1v1h-1zM19 27h1v1h-1zM29 27h1v1h-1zM15 19h2v10h-2zM20 28h1v1h-1zM28 28h1v1h-1zM32 19h2v10h-2zM21 29h1v1h-1zM27 29h1v1h-1zM22 30h1v1h-1zM26 30h1v1h-1zM19 32h10v2h-10zM8 35h2v2h-2z\"/><path fill=\"#fff6c8\" d=\"M24 17h1v1h-1zM23 18h3v1h-3zM22 19h5v1h-5zM21 20h3v1h-3zM25 20h3v1h-3zM20 21h3v1h-3zM26 21h3v1h-3zM19 22h3v1h-3zM27 22h3v1h-3zM18 23h3v1h-3zM28 23h3v1h-3zM17 24h3v1h-3zM29 24h3v1h-3zM18 25h3v1h-3zM28 25h3v1h-3zM19 26h3v1h-3zM23 22h3v5h-3zM27 26h3v1h-3zM20 27h3v1h-3zM26 27h3v1h-3zM21 28h3v1h-3zM25 28h3v1h-3zM22 29h5v1h-5zM23 30h3v1h-3zM24 31h1v1h-1z\"/></g><g class=\"ds-avatar-signal\"><rect x=\"246.5\" y=\"14.5\" width=\"7\" height=\"7\" fill=\"#ffe66d\"/><rect x=\"246.5\" y=\"478.5\" width=\"7\" height=\"7\" fill=\"#ac83c3\"/></g></svg></div>",
+      "css": ".ds-core{width:270px;max-width:100%;aspect-ratio:1}.ds-core svg{display:block;width:100%;height:100%}@media(max-width:700px){.ds-core{width:160px;margin:0 auto}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Battery insight becomes engineering evidence.",
+    "overview": "The existing amber, cream, coral, and violet pixel energy core anchors the identity. Crisp geometry, a dark field, readable type, and two restrained moving signals connect the artwork without turning it into a scientific result.\n\nThe GitHub profile uses native Markdown hierarchy; the optional gallery carries the custom CSS. Textual identity, project routes, and evidence remain readable outside the artwork. The refresh preserves the original engineering material and earlier visuals.",
+    "keyCharacteristics": [
+      "Recognisable source emblem and fixed typography.",
+      "Compact, self-contained assets with static alternatives.",
+      "Clear routes into source, methods, evidence, and limitations."
+    ],
+    "rules": [],
+    "dos": [
+      "Do retain the canonical pixel geometry and the user's recognisable identity.",
+      "Do keep names, project choices, scientific limits, and links readable outside artwork.",
+      "Do retain static assets, reduced-motion behavior, and the gallery pause control.",
+      "Do regenerate derived files from their sources and preserve provenance and snapshots."
+    ],
+    "donts": [
+      "Don't treat abstract signal paths as telemetry, model results, or validation evidence.",
+      "Don't claim native GitHub avatar or social-card animation without observed support.",
+      "Don't change project engines, private visibility, required checks, or publishing protections for presentation work.",
+      "Don't describe source inspection or detector output as completed live browser acceptance."
+    ]
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "design": "Rezwan pixel core / engineered signal",
+  "source": "48\u00d748 pixel geometry sampled from the existing user avatar; seven original colors retained",
+  "motion": {
+    "period_seconds": 12,
+    "iterations": "infinite",
+    "moving_elements": "two small signal markers; emblem and text stay fixed",
+    "svg": "script-free CSS; reduced-motion preference disables animation",
+    "gif": "loop=0; GIF cannot honor reduced-motion preference; use static alternate where needed"
+  },
+  "github": {
+    "native_avatar": "avatar.png; native animation unsupported",
+    "social_preview": "Static PNG for dependable sharing; receiving platforms control animation",
+    "readme": "GIF fallback; SVG motion depends on renderer"
+  },
+  "files": [
+    {
+      "path": "assets/makeover/avatar-static.svg",
+      "bytes": 3467,
+      "sha256": "eecddea2a02c7760cd3b81ed27448025d2cb5d2ddf56d1ba46e3fbcace7d746e",
+      "width": 500,
+      "height": 500,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/avatar.gif",
+      "bytes": 23055,
+      "sha256": "b8c86782b2b500f06c3cc9edd6d10c662325ea8c3b67e82884e8df82d4fd3c1d",
+      "width": 320,
+      "height": 320,
+      "frames": 48,
+      "loop": 0,
+      "duration_ms": 12000
+    },
+    {
+      "path": "assets/makeover/avatar.png",
+      "bytes": 3763,
+      "sha256": "02f14949f6b2e0a5b2eae225b4b6f35b0585728ceffe7af79915b93bea7d2f37",
+      "width": 500,
+      "height": 500
+    },
+    {
+      "path": "assets/makeover/avatar.svg",
+      "bytes": 4029,
+      "sha256": "8783ba10ebef5a04c7a0ead4746195f9076739310af068cb8ff3a0481e08b998",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "reduced_motion_static": true
+    },
+    {
+      "path": "assets/makeover/generated-art.origin.json",
+      "bytes": 2945,
+      "sha256": "7b60b7a61961cce28393259b6d818dcbccae3296428f91e57c6628291728ee6f"
+    },
+    {
+      "path": "assets/makeover/generated-art.png",
+      "bytes": 379420,
+      "sha256": "325c40e2ada339ca06d83073498953a32bf915313faefbc9df04880da84111d4",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/generated-art.webp",
+      "bytes": 22048,
+      "sha256": "352ae4470377ed55005a715e4e021948049d0633687125e9e02318f562352184",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/profile-banner-static.svg",
+      "bytes": 28853,
+      "sha256": "373f9220a5f91beb730820034a5111fe361e042f153ec2ee8cb22ad7e5855911",
+      "width": 1280,
+      "height": 426,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/profile-banner.gif",
+      "bytes": 67503,
+      "sha256": "50283bf17d13b4f3c7ddea38d99b41d3b31cd12957847be35d11e1592fb20a84",
+      "width": 960,
+      "height": 320,
+      "frames": 48,
+      "loop": 0,
+      "duration_ms": 12000
+    },
+    {
+      "path": "assets/makeover/profile-banner.png",
+      "bytes": 20251,
+      "sha256": "09a35513d3e8eba2d645da5cf615e629175e5243854fc0045115b07647de9d6e",
+      "width": 1280,
+      "height": 426
+    },
+    {
+      "path": "assets/makeover/profile-banner.svg",
+      "bytes": 29415,
+      "sha256": "a701ff222f340ca8d0ca5f2dde7e81247fc5d7aa5140ace6034520a54e4efb5c",
+      "width": 1280,
+      "height": 426,
+      "animated": true,
+      "reduced_motion_static": true
+    },
+    {
+      "path": "assets/makeover/social/battery-cycle-life-analyzer.png",
+      "bytes": 26390,
+      "sha256": "4a09ec3e29cdc4d4d26956b4a3182acc0045b5dd4bbbe437bcb47b79ffacbeaf",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/battery-cycle-life-analyzer.svg",
+      "bytes": 37026,
+      "sha256": "459551823ec8ee4d9c364742bce5011f12081fdf6edf34badb8a18c33e67e9c0",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social/bess-qaqc-toolkit.png",
+      "bytes": 18248,
+      "sha256": "ff7946584af5bfc5e9f0bda4cb16fea05c520c93e2f31273384100d30782d522",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/bess-qaqc-toolkit.svg",
+      "bytes": 32374,
+      "sha256": "a7874f2cbb781284947d7304b84e1305cf3e9d2260a84e028ea53677770b2a3f",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social/datacenter-twin-lab.png",
+      "bytes": 17250,
+      "sha256": "4dbac46bb7f880114bfe8f16ab4e16f49e59d1e292adc115677beae6b143ec14",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/datacenter-twin-lab.svg",
+      "bytes": 32930,
+      "sha256": "e84d0a7df2e1dd1c3f891794273ec11ea78df50c2a587e63b94a821f1d36f595",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social/helioforge-energy-lab.png",
+      "bytes": 19978,
+      "sha256": "f4729aeb4e4e843935b5376245133d518879e9d132e4c2f28c27204952a77abc",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/helioforge-energy-lab.svg",
+      "bytes": 35079,
+      "sha256": "636510473692b0fe9eda0a6a8231f57d0d1e4d86f97a654181003563fb18828c",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social/matlab-simulink-energy-lab.png",
+      "bytes": 19094,
+      "sha256": "ac85f9bf9926e09550c47c5839513717cb0b99ce0bd6d233e3ed9c0cb9dc81fe",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/matlab-simulink-energy-lab.svg",
+      "bytes": 34157,
+      "sha256": "f8ace6b3939578d33e7300342901fc1cad997978b3e5be98da5d0187d3b5287f",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social/voltrl.png",
+      "bytes": 13211,
+      "sha256": "f70f87076d358cba6ae519bce085221c65936288b3e19cef141b9a98d1c2517f",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social/voltrl.svg",
+      "bytes": 24211,
+      "sha256": "a667cdede80411386a238e35e3d3ddbeff03fc55823a2501032b807a0d332b89",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social-preview-static.svg",
+      "bytes": 38417,
+      "sha256": "dd0ddfddffb4b64c7e3368083f5bfbffca68c0d3e8b38f7056a2f5f0717b78fd",
+      "width": 1280,
+      "height": 640,
+      "animated": false,
+      "reduced_motion_static": null
+    },
+    {
+      "path": "assets/makeover/social-preview.png",
+      "bytes": 24871,
+      "sha256": "1d97d8e46c93e0b1a3fefd42f998978c659c2b9971a7fb273c975e2ba7252fda",
+      "width": 1280,
+      "height": 640
+    },
+    {
+      "path": "assets/makeover/social-preview.svg",
+      "bytes": 38746,
+      "sha256": "8938c51e9365de5ad4baee2bd88c4a9ebbea7ab64a1eb017ecc1a65d14797d8d",
+      "width": 1280,
+      "height": 640,
+      "animated": true,
+      "reduced_motion_static": true
+    }
+  ]
+}
