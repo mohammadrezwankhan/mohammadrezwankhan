@@ -23,6 +23,52 @@ physical assumptions to reproducible tests.
 > **Current mission:** build inspectable energy-system tools that help
 > researchers and engineers move from assumptions to defensible results.
 
+## Championing engineering you can inspect
+
+Battery research shapes my open energy tools. Upstream contributions put the
+same care into shared software. Both leave a public record you can examine.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/profile-evidence-circuit-mobile.svg">
+  <img src="assets/profile-evidence-circuit.svg" alt="Evidence circuit: battery research informs open energy tools. Tools and upstream contributions expose public evidence. Inspection, questions and improvements feed back into the tools." width="100%">
+</picture>
+
+**Read the circuit:** research informs tools; tools and upstream changes expose
+evidence; inspection guides the next revision.
+
+[Research record](https://orcid.org/0000-0002-1532-0598) ·
+[Energy Lab](https://github.com/mohammadrezwankhan/matlab-simulink-energy-lab) ·
+[Verified contribution records](#selected-upstream-contributions)
+
+## Selected Upstream Contributions
+
+**Security advisory credit:** listed as an **Analyst** on
+[GHSA-78fc-9688-w8xw / CVE-2026-40076](https://github.com/advisories/GHSA-78fc-9688-w8xw).
+My contribution corrected the advisory's machine-readable CVSS 4.0 metadata.
+
+### Merged
+
+| Upstream project | Contribution | Merged |
+|---|---|---|
+| [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): removed the trailing slash from the malformed CVSS 4.0 vector for [GHSA-78fc-9688-w8xw](https://github.com/advisories/GHSA-78fc-9688-w8xw). | 12 Nov 2026 |
+| [Bifrost](https://github.com/maximhq/bifrost) | [PR #6503](https://github.com/maximhq/bifrost/pull/6503): routed OpenCode Responses requests to `/v1/responses`, with regression coverage. | 25 Aug 2026 |
+| [Flowsint](https://github.com/reconurge/flowsint) | [PR #217](https://github.com/reconurge/flowsint/pull/217): recognized `@`-prefixed imported usernames while preserving normalization and hash exclusions. | 25 Aug 2026 |
+| [EMHASS](https://github.com/davidusb-geek/emhass) | [PR #1039](https://github.com/davidusb-geek/emhass/pull/1039): added the missing heat-topology guide and linked thermal documentation. | 1 Aug 2026 |
+
+<details>
+<summary><strong>Open resource-list submissions</strong></summary>
+
+These submissions remain open as of 12 November 2026:
+
+- [awesome-power-analysis #1](https://github.com/anderson-optimization/awesome-power-analysis/pull/1)
+- [awesome-MATLAB #48](https://github.com/mikecroucher/awesome-MATLAB/pull/48)
+- [awesome-battery-data #2](https://github.com/pauljgasper/awesome-battery-data/pull/2)
+
+</details>
+
+Contribution status checked against authenticated GitHub records on
+**12 November 2026**. [Evidence and change record](docs/profile-evidence-2026-11-12.md).
+
 ## Start with an engineering question
 
 | Explore | Start here | What you can inspect |
@@ -111,11 +157,14 @@ hardware qualification, grid-code compliance, or field validation.
 | Energy Lab | Active reference | Regression-tested; numerically verified; synthetic holdout evaluated | Not applicable | Versioned GitHub releases |
 | Battery Cycle-Life Analyzer | Alpha package | Unit-tested; synthetic holdout evaluated | No | Versioned package repository |
 | VoltRL | Research artifact | Protocol audited; synthetic and historical backtests | No | Commit-bound result bundles |
-| HelioForge Energy Lab | Research preview | Synthetic scenario and conservation checks; Python 3.11–3.13 CI; browser/API tests; no field validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/helioforge-energy-lab/releases/tag/preview-2026.09.30.1) |
+| HelioForge Energy Lab | Research preview | Synthetic scenario and conservation checks; Python 3.11–3.13 CI; browser/API tests; no field validation | No | [30 Oct 2026 source release](https://github.com/mohammadrezwankhan/helioforge-energy-lab/releases/tag/cold-load-repair-20261030-a071652), commit `a071652`; synthetic screening limits remain. |
 | ZephyrTrade | Research preview | Synthetic backtests; Python 3.11/3.12 CI; browser/native numerical parity; no market-performance validation | No | [2026-09-30 source prerelease](https://github.com/mohammadrezwankhan/zephyrtrade/releases/tag/preview-2026.09.30) |
 | BESS QA/QC Toolkit | Draft toolkit | Parser/test verified; policy checks exercised on reference data | No | Repository snapshots |
-| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v2.0.0 release](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.0), source commit `424cf5349ea1f53d5d207a2d48af689774d878dc`; historical `main` CI [failed on 2026-10-12](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/38314821223) at [`6c40b70`](https://github.com/mohammadrezwankhan/datacenter-twin-lab/commit/6c40b7010f69c8f12414530c7a776b98e3883729) |
+| Datacenter Twin Lab | Research alpha | Deterministic synthetic scenarios; energy-accounting checks; browser/native output equality; no facility validation | No | [v2.0.1 release](https://github.com/mohammadrezwankhan/datacenter-twin-lab/releases/tag/v2.0.1); [Tests passed on 10 Nov 2026](https://github.com/mohammadrezwankhan/datacenter-twin-lab/actions/runs/42916534472) at [`a92128e`](https://github.com/mohammadrezwankhan/datacenter-twin-lab/commit/a92128eaa85621ccc5691254f32e335a882f0795). |
 | Smart Grid Storage Playbook | Living handbook | Unit-tested reference calculations | Not applicable | Repository snapshots |
+
+Release references checked **12 November 2026**. CI results apply to the exact
+linked commit. [Earlier release and CI references](docs/profile-evidence-2026-11-12.md#historical-references-retained).
 
 **Validation vocabulary:** *unit-tested* means function-level expected behavior;
 *regression-tested* means deterministic outputs reproduced in CI; *numerically
@@ -126,20 +175,6 @@ and *qualified/certified* for projects that publish evidence meeting those
 stronger definitions.
 
 </details>
-
-## Selected Upstream Contributions
-
-### Merged
-
-| Upstream project | Contribution |
-|---|---|
-| [EMHASS](https://github.com/davidusb-geek/emhass) | [PR #1039](https://github.com/davidusb-geek/emhass/pull/1039): added the missing heat-topology guide. |
-
-### Under review
-
-| Upstream project | Contribution |
-|---|---|
-| [GitHub Advisory Database](https://github.com/github/advisory-database) | [PR #8819](https://github.com/github/advisory-database/pull/8819): correct a malformed CVSS 4 vector. |
 
 <details>
 <summary><strong>Energy Evidence Atlas and self-paced learning paths</strong></summary>
@@ -182,9 +217,9 @@ Explore [69 browser demos on MKLab](https://mklab.co.technology/) (catalogue che
 
 The new source repositories remain private; the public website provides synthetic browser editions. Use fictional information only. These demos do not establish clinical, legal, financial or emergency-service readiness.
 
-## Public laboratories and current source records
+## Public laboratories and historical source snapshots
 
-- **[MKLab](https://mklab.co.technology/)**: Explore 69 public browser demos for energy, learning, civic information and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
+- **[MKLab](https://mklab.co.technology/)**: Explore public browser demos for energy, learning, civic information and everyday planning. Fictional or synthetic demonstrations, not medical, financial, legal or emergency services. Some source repositories are private.
 - **[Intelligent UI](https://mrkhan.co.technology/#intelligent-ui)**: Local, no API; deterministic approved-source routing, no connected AI, and not an engineering approval.
 - **[HelioForge Energy Lab](https://mkgrid.co.technology/)**: Explore hybrid-energy architectures, linked lessons and bundled scenario results. The current source includes a bounded 24-hour browser energy-balance Terminal; advanced studies require the local Python application. Check the published build before assuming a hosted capability. Synthetic screening only; no calibrated plant control.
 - **[ZephyrTrade](https://mktrade.co.business/)**: Compare wind-market strategies and calculate hypothetical offers from synthetic observations. Synthetic historical data, not live prices, order execution or investment recommendations.
@@ -205,11 +240,11 @@ Source and CI records reviewed 7 October 2026. Counts refer to individual jobs a
 </details>
 
 <details>
-<summary><strong>Complete original repository directory — 30 October 2026 snapshot</strong></summary>
+<summary><strong>Complete original repository directory — 12 November 2026 snapshot</strong></summary>
 
 ## Public original repository directory
 
-Snapshot checked **30 October 2026**: **12 owned public originals**, including this profile. This active directory excludes forks and private repositories. It is separate from the browser-demo catalogue and historical upstream contributions above. [Browse the live repository list](https://github.com/mohammadrezwankhan?tab=repositories). Source and workflow evidence apply to their linked revisions.
+Snapshot checked **12 November 2026**: **12 owned public originals**, including this profile. This active directory excludes forks and private repositories. It is separate from the browser-demo catalogue and historical upstream contributions above. [Browse the live repository list](https://github.com/mohammadrezwankhan?tab=repositories). Source and workflow evidence apply to their linked revisions.
 
 | Original repository | Engineering question | Start here |
 |---|---|---|
@@ -288,9 +323,10 @@ git show HEAD:README.md
 git show HEAD:CONTRIBUTING.md
 ```
 
-These commands come from the audited source revision. Runtime requirements and the project's own validation limits are documented below; the standalone browser lab does not execute these commands.
-
-The detailed project guide below remains the source for installation, supported features, licences, and scientific limits. The browser equations and laboratory settings do not change the original application or numerical engine.
+These commands inspect files in this profile repository. The standalone browser
+lab is a separate teaching exercise; it does not execute MATLAB, Python, or the
+linked projects' numerical engines. Follow each project's own README for its
+runtime, licence, installation steps, and scientific limits.
 
 </details>
 
@@ -339,3 +375,4 @@ The detailed project guide below remains the source for installation, supported 
 [Original profile snapshot](README.before-makeover-2026-11-08.md) · [Visual assets and motion controls](https://mohammadrezwankhan.github.io/mohammadrezwankhan/brand/) · [Design research and change record](docs/profile-makeover-2026-11-08.md)
 
 The energy-core motion is illustrative artwork; it does not display live telemetry.
+
