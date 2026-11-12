@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="592" viewBox="0 0 480 592" role="img" aria-labelledby="title desc">
+  <title id="title">Championing engineering you can inspect</title>
+  <desc id="desc">Battery research informs open energy tools. The tools expose source, tests and limits through the left branch into public evidence. Upstream contributions independently publish changes and review history into public evidence. The dotted right branch represents inspection, questions and improvements feeding back into the tools. This is a working philosophy, not an award or validation claim.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#ff9f1c"/></marker>
+    <marker id="return" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#ac83c3"/></marker>
+  </defs>
+  <rect width="480" height="592" rx="12" fill="#100b18"/>
+  <g fill="#1d1327" stroke="#ac83c3" stroke-width="1.5">
+    <rect x="52" y="22" width="376" height="82" rx="8"/>
+    <rect x="52" y="172" width="376" height="82" rx="8"/>
+    <rect x="52" y="322" width="376" height="82" rx="8"/>
+  </g>
+  <path d="M 88 472 H 392 L 428 520 L 392 568 H 88 L 52 520 Z" fill="#1d1327" stroke="#ffe66d" stroke-width="2"/>
+  <g fill="none" stroke="#ff9f1c" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M 240 104 V 170"/>
+    <path d="M 52 213 H 25 V 520 H 50"/>
+    <path d="M 240 404 V 470"/>
+  </g>
+  <path d="M 428 520 H 455 V 213 H 430" fill="none" stroke="#ac83c3" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#return)"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <g fill="#fff6c8" font-size="26" font-weight="700">
+      <text x="240" y="57">Battery research</text>
+      <text x="240" y="207">Open energy tools</text>
+      <text x="240" y="357">Upstream work</text>
+    </g>
+    <text x="240" y="511" fill="#ffe66d" font-size="26" font-weight="700">Public evidence</text>
+    <g fill="#cbb7d9" font-size="20">
+      <text x="240" y="85">Equations · assumptions</text>
+      <text x="240" y="235">Source · tests · limits</text>
+      <text x="240" y="385">Changes · review history</text>
+      <text x="240" y="543">Inspect the record</text>
+    </g>
+    <g fill="#fff6c8" font-size="18">
+      <text x="286" y="144">informs</text>
+      <text x="296" y="444">publishes</text>
+    </g>
+    <text transform="translate(15 366) rotate(-90)" fill="#fff6c8" font-size="18">exposes</text>
+    <text transform="translate(463 366) rotate(90)" fill="#fff6c8" font-size="18">Inspect · question · improve</text>
+  </g>
+</svg>
