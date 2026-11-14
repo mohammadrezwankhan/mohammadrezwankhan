@@ -91,4 +91,15 @@ body[data-motion="off"] .champion-art * { animation: none !important; }
 @media print {
   [data-avatar-brand] .champion-art, [data-avatar-brand] .brand-avatar { display: none; }
   html[data-avatar-brand] body { color: #100b18; background: white; }
+  [data-avatar-brand="portfolio"] :is(.lesson, .metrics, .boundary) {
+    background: white;
+    border-color: #5c2a72;
+    color: #100b18;
+    --ink: #100b18;
+    --muted: #231331;
+    --faint: #231331;
+  }
+  [data-avatar-brand="portfolio"] :is(.lesson, .metrics, .boundary) * { color: #100b18; }
+  [data-avatar-brand="portfolio"] :is(.lesson, .metrics, .boundary) a { color: #5c2a72; text-decoration: underline; }
+  [data-avatar-brand="portfolio"] .lesson.complete::after { color: #5c2a72; }
 }

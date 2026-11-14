@@ -125,21 +125,36 @@ def restyle_svg(text: str, add_seal: bool = False) -> str:
     # Badge and tag backgrounds stay dark in both themes. Keep their preserved
     # values legible without changing ordinary text on the light canvas.
     if re.search(r'aria-labelledby="section-\d+-title', text):
+        def number_ink(match: re.Match[str]) -> str:
+            tag, label = match.groups()
+            if re.search(r'\bclass="', tag):
+                tag = re.sub(r'\bclass="([^"]*)"',
+                             lambda m: 'class="' + m[1] + ('' if 'brand-on-dark' in m[1].split() else ' brand-on-dark') + '"', tag)
+            else:
+                tag += ' class="brand-on-dark"'
+            return tag + label
         text = re.sub(r'(<text\b[^>]*)(>\d{2}</text>)',
-                      r'\1 class="brand-on-dark"\2', text)
+                      number_ink, text)
     if 'aria-labelledby="tag-' in text:
         text = text.replace('class="v"', 'class="v brand-on-dark"')
-    if 'class="brand-on-dark"' in text or 'class="v brand-on-dark"' in text:
-        text = text.replace('</svg>', '<style>.brand-on-dark{fill:#fff6c8}</style></svg>')
+    on_dark = '<style>.brand-on-dark{fill:#fff6c8}</style>'
+    text = text.replace(on_dark, '')
+    if re.search(r'class="[^"]*\bbrand-on-dark\b', text):
+        text = text.replace('</svg>', on_dark + '</svg>')
     theme = '''<style>
 :root{--bg:#100b18;--bg-top:#231331;--surface:#231331;--surface-2:#231331;--ink:#fff6c8;--muted:#fff6c8;--grid:#5c2a72;--outline:#5c2a72;--shadow:#100b18;--accent:#ff9f1c}
 @media(prefers-color-scheme:light){:root{--bg:#fff6c8;--bg-top:#fff6c8;--surface:#fff6c8;--surface-2:#ffe66d;--ink:#231331;--muted:#5c2a72;--grid:#5c2a72;--outline:#5c2a72;--shadow:#5c2a72;--accent:#5c2a72}}
 </style>'''
     # The existing SVG retains all labels and connectivity; only paint changes.
+    # Replace only the exact blocks emitted by this generator, including legacy
+    # unmarked copies. A committed branded HEAD is a supported input.
+    text = text.replace(theme, '')
     if '--bg:' in text:
         text = text.replace('</svg>', theme + '</svg>')
+    seal = '<g data-brand-decoration="true" aria-hidden="true">' + core(810, 375, 86) + '</g>'
+    text = text.replace(seal, '')
     if add_seal:
-        text = text.replace('</svg>', '<g data-brand-decoration="true" aria-hidden="true">' + core(810, 375, 86) + '</g></svg>')
+        text = text.replace('</svg>', seal + '</svg>')
     ET.fromstring(text)
     return text
 
@@ -203,6 +218,13 @@ def apply_repository(repo: Path) -> dict:
             blocks.append(match.group())
             return f'<!-- preserved-script-{len(blocks)-1} -->'
         html = re.sub(r'<script\b[^>]*>[\s\S]*?</script\s*>', stash_script, html, flags=re.I)
+        # Scripts are already protected. Normalize only our known generated
+        # decorations, leaving every original element and attribute in place.
+        html = re.sub(r'<html\b[^>]*>',
+                      lambda m: re.sub(r' data-avatar-brand="(?:dashboard|portfolio|catalog)"', '', m.group()), html, count=1)
+        html = re.sub(r'<link rel="stylesheet" href="(?:\.\./)?visuals/brand-uniformity/brand\.css">\n?', '', html)
+        html = re.sub(r'<img class="brand-avatar" data-brand-decoration="true"[^>]*>', '', html)
+        html = re.sub(r'<svg class="champion-art" data-brand-decoration="true"[^>]*>[\s\S]*?</svg\s*>\n?', '', html)
         # Only paint-bearing CSS/SVG content is recolored; prose stays byte-exact.
         html = re.sub(r'<style\b[^>]*>[\s\S]*?</style\s*>', lambda m: recolor(m.group()), html, flags=re.I)
         html = re.sub(r'<svg\b[^>]*>[\s\S]*?</svg\s*>', lambda m: restyle_svg(m.group()), html, flags=re.I)
