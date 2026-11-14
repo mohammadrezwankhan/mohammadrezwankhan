@@ -170,6 +170,11 @@ def head_file(repo: Path, path: Path) -> str:
 def write(repo: Path, relative: str, content: str) -> None:
     path = repo / relative
     path.parent.mkdir(parents=True, exist_ok=True)
+    # GitHub's signed web editor appends one LF to otherwise unchanged SVGs.
+    # Preserve only that exact transport difference in existing generated output.
+    if (path.suffix == '.svg' and not content.endswith('\n') and path.is_file()
+            and path.read_bytes() == content.encode('utf-8') + b'\n'):
+        return
     path.write_text(content)
 
 
