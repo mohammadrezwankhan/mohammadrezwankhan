@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "name": "reviewed-candidates",
+      "path": "transfer"
+    },
+    {
+      "name": "battery-thermal-modeling-notes",
+      "uri": "vscode-vfs://github+7b2276223a312c22726566223a7b2274797065223a342c226964223a227374796c652f6176617461722d756e69666f726d6974792d3230323631313134227d7d/mohammadrezwankhan/battery-thermal-modeling-notes"
+    },
+    {
+      "name": "bess-qaqc-toolkit",
+      "uri": "vscode-vfs://github+7b2276223a312c22726566223a7b2274797065223a342c226964223a227374796c652f6176617461722d756e69666f726d6974792d3230323631313134227d7d/mohammadrezwankhan/bess-qaqc-toolkit"
+    },
+    {
+      "name": "matlab-simulink-energy-lab",
+      "uri": "vscode-vfs://github+7b2276223a312c22726566223a7b2274797065223a342c226964223a227374796c652f6176617461722d756e69666f726d6974792d3230323631313134227d7d/mohammadrezwankhan/matlab-simulink-energy-lab"
+    },
+    {
+      "name": "smart-grid-storage-playbook",
+      "uri": "vscode-vfs://github+7b2276223a312c22726566223a7b2274797065223a342c226964223a227374796c652f6176617461722d756e69666f726d6974792d3230323631313134227d7d/mohammadrezwankhan/smart-grid-storage-playbook"
+    },
+    {
+      "name": "voltrl",
+      "uri": "vscode-vfs://github+7b2276223a312c22726566223a7b2274797065223a342c226964223a227374796c652f6176617461722d756e69666f726d6974792d3230323631313134227d7d/mohammadrezwankhan/voltrl"
+    }
+  ]
+}
