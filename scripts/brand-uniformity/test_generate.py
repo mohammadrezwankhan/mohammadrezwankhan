@@ -21,6 +21,32 @@ SVG = '<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="section-01-title
 
 
 class GeneratorRegressionTests(unittest.TestCase):
+    def test_svg_write_preserves_only_an_exact_single_terminal_lf(self):
+        # Removing the narrow write guard must reproduce the web editor's
+        # otherwise-identical SVG losing its appended terminal LF on rerun.
+        content = '<svg xmlns="http://www.w3.org/2000/svg"><title>Exact text</title></svg>'
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            target = repo / 'assets/brand-uniformity/hero.svg'
+            target.parent.mkdir(parents=True)
+            for existing, expected in (
+                (content + '\n', content + '\n'),
+                (content, content),
+                (content + '\n\n', content),
+                (content + '\r\n', content),
+                (content.replace('Exact text', 'Different text') + '\n', content),
+                (content.replace('</title>', ' </title>') + '\n', content),
+            ):
+                with self.subTest(existing=existing):
+                    target.write_bytes(existing.encode())
+                    GEN.write(repo, 'assets/brand-uniformity/hero.svg', content)
+                    self.assertEqual(target.read_bytes(), expected.encode())
+            html = repo / 'docs/index.html'
+            html.parent.mkdir(parents=True)
+            html.write_text(content + '\n')
+            GEN.write(repo, 'docs/index.html', content)
+            self.assertEqual(html.read_bytes(), content.encode(), 'No tolerance for other output types')
+
     def test_committed_rerun_preserves_pages_assets_scripts_and_json(self):
         # Reintroducing unconditional injection must duplicate output on run two.
         with tempfile.TemporaryDirectory() as directory:
