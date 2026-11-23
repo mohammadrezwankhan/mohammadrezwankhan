@@ -1,0 +1,42 @@
+name: Brand generation regression
+
+on:
+  pull_request:
+    paths:
+      - "scripts/brand-uniformity/**"
+      - ".github/workflows/brand-uniformity-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/brand-uniformity/**"
+      - ".github/workflows/brand-uniformity-check.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: brand-generation-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  test-generator:
+    name: Test branded page generator
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Audit runner network activity
+        uses: step-security/harden-runner@1d88384fd173af6ecb012dfd0264a306b711241a # v2.22.3
+        with:
+          egress-policy: audit
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Compile generator and regression tests
+        run: python -m compileall -q scripts/brand-uniformity
+      - name: Verify idempotent brand generation and script boundaries
+        run: python -m unittest discover -s scripts/brand-uniformity -p 'test_*.py' -v
