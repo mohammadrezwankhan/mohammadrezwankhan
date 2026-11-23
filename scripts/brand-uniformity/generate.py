@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import colorsys
 import hashlib
+from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
@@ -178,6 +179,58 @@ def write(repo: Path, relative: str, content: str) -> None:
     path.write_text(content)
 
 
+class ScriptSpans(HTMLParser):
+    """Identify script elements without reserializing the original HTML."""
+
+    def __init__(self, source: str) -> None:
+        super().__init__(convert_charrefs=False)
+        self.source = source
+        self.line_starts = [0, *(match.end() for match in re.finditer(r'\n', source))]
+        self.start: int | None = None
+        self.spans: list[tuple[int, int]] = []
+
+    def source_offset(self) -> int:
+        line, column = self.getpos()
+        return self.line_starts[line - 1] + column
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'script':
+            self.start = self.source_offset()
+
+    def handle_startendtag(self, tag, attrs):
+        if tag == 'script':
+            raise ValueError('Script elements must have an explicit closing tag')
+
+    def handle_endtag(self, tag):
+        if tag == 'script' and self.start is not None:
+            end = self.source.index('>', self.source_offset()) + 1
+            self.spans.append((self.start, end))
+            self.start = None
+
+
+def protect_scripts(html: str) -> tuple[str, dict[str, str]]:
+    """Replace script spans with placeholders absent from the source page."""
+    parser = ScriptSpans(html)
+    parser.feed(html)
+    parser.close()
+    if parser.start is not None:
+        raise ValueError('Script elements must have an explicit closing tag')
+
+    prefix = '<!-- preserved-script-'
+    while prefix in html:
+        prefix += '-'
+    parts = []
+    scripts = {}
+    previous_end = 0
+    for index, (start, end) in enumerate(parser.spans):
+        marker = f'{prefix}{index} -->'
+        parts.extend((html[previous_end:start], marker))
+        scripts[marker] = html[start:end]
+        previous_end = end
+    parts.append(html[previous_end:])
+    return ''.join(parts), scripts
+
+
 def apply_repository(repo: Path) -> dict:
     asset_dir = 'docs/visuals/brand-uniformity'
     for name, value in [('avatar.svg', avatar()), ('champion.svg', champion(True)),
@@ -218,11 +271,7 @@ def apply_repository(repo: Path) -> dict:
         if not path.exists():
             continue
         html = head_file(repo, Path(rel))
-        blocks = []
-        def stash_script(match: re.Match[str]) -> str:
-            blocks.append(match.group())
-            return f'<!-- preserved-script-{len(blocks)-1} -->'
-        html = re.sub(r'<script\b[^>]*>[\s\S]*?</script\s*>', stash_script, html, flags=re.I)
+        html, scripts = protect_scripts(html)
         # Scripts are already protected. Normalize only our known generated
         # decorations, leaving every original element and attribute in place.
         html = re.sub(r'<html\b[^>]*>',
@@ -247,10 +296,10 @@ def apply_repository(repo: Path) -> dict:
             html = re.sub(r'(<nav class="surface-nav"[^>]*>)', lambda m: m.group() + img, html, count=1)
             html = html.replace('src="visuals/', 'src="visuals/brand-uniformity/')
             html = html.replace('visuals/brand-uniformity/brand-uniformity/', 'visuals/brand-uniformity/')
-        for index, script in enumerate(blocks):
+        for marker, script in scripts.items():
             if surface == 'dashboard' and RENDERER_OLD in script:
                 script = script.replace(RENDERER_OLD, RENDERER_NEW)
-            html = html.replace(f'<!-- preserved-script-{index} -->', script)
+            html = html.replace(marker, script)
         write(repo, rel, html)
 
     # Repoint only existing Markdown image references; copy, links and alt text remain.

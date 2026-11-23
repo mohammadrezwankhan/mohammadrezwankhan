@@ -15,7 +15,7 @@ SPEC = spec_from_file_location('brand_generator', Path(__file__).with_name('gene
 GEN = module_from_spec(SPEC)
 SPEC.loader.exec_module(GEN)
 
-ORIGINAL_SCRIPT = '<script>const label = "#00e5ff <img class=\\"brand-avatar\\">";\n' + GEN.RENDERER_OLD + '\n</script>'
+ORIGINAL_SCRIPT = '<script>const label = "#00e5ff <img class=\\"brand-avatar\\">";\n' + GEN.RENDERER_OLD + '\nconst marker = "<!-- preserved-script-1 -->";\n</script>'
 ORIGINAL_JSON = '<script type="application/json">{ "physical_limit": 3, "paint": "#00e5ff" }</script>'
 SVG = '<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="section-01-title"><style>:root{--bg:#083344}</style><title id="section-01-title">Physical boundary</title><text x="2" y="3">01</text></svg>'
 
@@ -63,7 +63,7 @@ class GeneratorRegressionTests(unittest.TestCase):
             for path, body in pages.items():
                 target = repo / path
                 target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_text('<!doctype html><html lang="en"><head><style>p{color:#00e5ff}</style></head><body><p>Unchanged equations &amp; limits.</p><img class="original-art" data-brand-decoration="true" src="original.svg" alt="Original content">' + body + SVG + ORIGINAL_SCRIPT + ORIGINAL_JSON + '</body></html>')
+                target.write_text('<!doctype html><html lang="en"><head><style>p{color:#00e5ff}</style></head><body><p>Unchanged equations &amp; limits.</p><!-- preserved-script-0 --><img class="original-art" data-brand-decoration="true" src="original.svg" alt="Original content">' + body + SVG + ORIGINAL_SCRIPT + ORIGINAL_JSON + '</body></html>')
             (repo / 'README.md').write_text('Original prose [link](docs/index.html)\n')
             asset = repo / 'assets/hero-25d.svg'
             asset.parent.mkdir()
@@ -77,6 +77,7 @@ class GeneratorRegressionTests(unittest.TestCase):
                 self.assertEqual(html.count('data-avatar-brand='), 1)
                 self.assertEqual(html.count('class="brand-avatar" data-brand-decoration="true"'), 1)
                 self.assertIn(ORIGINAL_JSON, html)
+                self.assertIn('<!-- preserved-script-0 -->', html)
                 expected_script = ORIGINAL_SCRIPT.replace(GEN.RENDERER_OLD, GEN.RENDERER_NEW) if name == 'docs/index.html' else ORIGINAL_SCRIPT
                 self.assertIn(expected_script, html)
                 self.assertIn('Unchanged equations &amp; limits.', html)
